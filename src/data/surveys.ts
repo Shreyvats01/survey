@@ -11,9 +11,9 @@ export const surveys: Survey[] = [
       "How wild animal impact the daily life in hilly region",
     category: "Environment & Wildlife",
     status: "ongoing",
-    formUrl: "https://forms.gle/example1",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScmxUsKvu-vrU6n5wDYKWD-ElA9mzOi5thPV7xwqvZ3j1Oq5w/viewform?usp=dialog",
     forms: [
-      { language: "English", url: "https://forms.gle/example1" },
+      { language: "English", url: "https://docs.google.com/forms/d/e/1FAIpQLScmxUsKvu-vrU6n5wDYKWD-ElA9mzOi5thPV7xwqvZ3j1Oq5w/viewform?usp=dialog" },
       { language: "Hindi", url: "https://docs.google.com/forms/d/e/1FAIpQLSeTYMXF8o-UWNNH_TUZtMbvbTTQGlpVeJvr4R6NAa0RJpU3dQ/viewform?usp=header" },
     ],
     coverImage: "/images/survey-wildlife.jpg",
