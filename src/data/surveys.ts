@@ -8,13 +8,13 @@ export const surveys: Survey[] = [
     title: "Wild Life Impact in Hilly Regions",
     subtitle: "Everyday Coexistence, Crop Depredation, and Adaptive Livelihoods",
     description:
-      "How w",
+      "How wild animal impact the daily life in hilly region",
     category: "Environment & Wildlife",
     status: "ongoing",
     formUrl: "https://forms.gle/example1",
     forms: [
       { language: "English", url: "https://forms.gle/example1" },
-      { language: "Hindi", url: "https://forms.gle/example1hi" },
+      { language: "Hindi", url: "https://docs.google.com/forms/d/e/1FAIpQLSeTYMXF8o-UWNNH_TUZtMbvbTTQGlpVeJvr4R6NAa0RJpU3dQ/viewform?usp=header" },
     ],
     coverImage: "/images/survey-wildlife.jpg",
     coverImageAlt:
