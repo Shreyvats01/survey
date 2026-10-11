@@ -1,7 +1,9 @@
 import { cn } from "@/lib/utils";
 import { Link } from "react-router";
 import { motion } from "motion/react";
+import { Lock, ShieldCheck } from "lucide-react";
 import type { Survey } from "@/types/survey";
+import { isSurveyProtected } from "@/lib/survey-security";
 import { SurveyStatus } from "./survey-status";
 
 interface SurveyCardProps {
@@ -21,6 +23,7 @@ export function SurveyCard({
 }: SurveyCardProps) {
   const isFeatured = variant === "featured";
   const shouldShowStatus = showStatus ?? (!isFeatured && Boolean(survey.status));
+  const isProtected = isSurveyProtected(survey);
 
   return (
     <motion.article
@@ -37,6 +40,13 @@ export function SurveyCard({
       >
         {/* Observatory photo container with responsive corner radii & floating category badge */}
         <div className="relative overflow-hidden rounded-[24px] min-[688px]:rounded-[32px] min-[1312px]:rounded-[40px] bg-plum/5">
+          {isProtected && (
+            <div className="absolute top-3.5 right-3.5 z-10 flex items-center gap-1.5 rounded-full bg-plum/85 text-cream px-2.5 py-1 text-xs font-medium backdrop-blur-md shadow-xs">
+              <Lock className="h-3.5 w-3.5" />
+              <ShieldCheck className="h-3.5 w-3.5" />
+              <span>Password Protected</span>
+            </div>
+          )}
           <div
             data-card-image
             className="survey-card-image w-full aspect-[16/10] overflow-hidden"
@@ -53,6 +63,13 @@ export function SurveyCard({
         <div className="mt-4 min-[1312px]:mt-6">
           <div className="mb-2 flex items-center gap-2">
             {shouldShowStatus && <SurveyStatus status={survey.status} />}
+            {isProtected && (
+              <span className="inline-flex items-center gap-1 text-[11px] font-medium text-plum/70 bg-plum/10 rounded-full px-2 py-0.5">
+                <Lock className="h-2.5 w-2.5" />
+                <ShieldCheck className="h-2.5 w-2.5" />
+                Protected
+              </span>
+            )}
             <span className="text-xs text-plum/50 font-sans">{survey.category}</span>
           </div>
 

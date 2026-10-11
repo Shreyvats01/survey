@@ -9,52 +9,52 @@ const defaultExplorationImages: Record<
   { src: string; alt: string; caption: string }
 > = {
   "1": {
-    src: "/images/wildlife-terrace.jpg",
-    alt: "Steep terraced mountain village bordering pine forest",
+    src: "/images/wildlife/wildlife-approach.jpg",
+    alt: "Terraced village fields bordering the Binsar Wildlife Sanctuary in Uttarakhand",
     caption:
       "Terraced cultivation along forest contours where human-wildlife encounters are actively documented.",
   },
   "2": {
-    src: "/images/digital-market.jpg",
-    alt: "Rural artisan utilizing digital tools at local market",
+    src: "/images/digital-learning/digital-approach.jpg",
+    alt: "Rural resident using a mobile phone in a village setting",
     caption:
       "Field documentation of intermittent network access and device sharing routines.",
   },
   "3": {
-    src: "/images/water-naula.jpg",
-    alt: "Traditional mountain spring sanctuary and water harvesting channel",
+    src: "/images/water/water-approach.jpg",
+    alt: "Natural village water supply springs flowing from stone channels at Sankot in the Himalayas",
     caption:
-      "Mapping community-managed gravity water distribution and seasonal turbidity records.",
+      "Community-managed natural freshwater springs at Sankot that supply drinking water and terraced agriculture.",
   },
   "4": {
-    src: "/images/market-vendor.jpg",
-    alt: "Weekly market stall vendor arranging local farm produce",
+    src: "/images/market/market-approach.jpg",
+    alt: "Villagers and traders negotiating at stalls in a rural weekly market haat",
     caption:
       "Recording transaction methods, seasonal price resilience, and regional trading corridors.",
   },
   "5": {
-    src: "/images/transport-ridge-bus.jpg",
-    alt: "Regional transit bus negotiating steep mountain ridge road",
+    src: "/images/migration/migration-approach.jpg",
+    alt: "Young people on a hilltop ridge overlooking Himalayan valleys in Pauri Garhwal",
     caption:
-      "Tracking transit frequencies, schedule reliability, and commute barriers.",
+      "Examining regional migration drivers, vocational shifts, and local livelihood viability.",
   },
   "6": {
-    src: "/images/tradition-seed-storage.jpg",
-    alt: "Traditional wooden vernacular seed storehouse and craft tools",
+    src: "/images/traditional/tradition-approach.jpg",
+    alt: "Traditional heirloom red rice terraces in Peja village, Rohru",
     caption:
       "Documenting generational agricultural knowledge systems and artisan practices.",
   },
   "7": {
-    src: "/images/health-conversation.jpg",
-    alt: "Community health worker consulting with village elders",
+    src: "/images/transport/transport-approach.jpg",
+    alt: "A public transit bus navigating steep mountain roads between rural valleys in Himachal Pradesh",
     caption:
-      "Evaluating primary clinic access, emergency transit times, and community health networks.",
+      "A regional public transit bus navigating high mountain gradient roads between valleys in Himachal Pradesh.",
   },
   "8": {
-    src: "/images/migration-students.jpg",
-    alt: "Youth gathering at hillside transit point discussing educational opportunities",
+    src: "/images/mental-health/health-approach.jpg",
+    alt: "Frontline ASHA workers and community health staff holding a consultation meeting",
     caption:
-      "Examining regional migration drivers, vocational shifts, and local livelihood viability.",
+      "Evaluating primary clinic access, emergency transit times, and community health networks.",
   },
 };
 

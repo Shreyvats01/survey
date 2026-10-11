@@ -15,7 +15,7 @@ export const surveys: Survey[] = [
       { language: "English", url: "https://docs.google.com/forms/d/e/1FAIpQLScmxUsKvu-vrU6n5wDYKWD-ElA9mzOi5thPV7xwqvZ3j1Oq5w/viewform?usp=dialog" },
       { language: "Hindi", url: "https://docs.google.com/forms/d/e/1FAIpQLSeTYMXF8o-UWNNH_TUZtMbvbTTQGlpVeJvr4R6NAa0RJpU3dQ/viewform?usp=header" },
     ],
-    coverImage: "/images/survey-wildlife.jpg",
+    coverImage: "/images/wildlife/survey-wildlife.jpg",
     coverImageAlt:
       "Terraced fields at the edge of a dense mountain forest in Mandi",
     estimatedMinutes: 8,
@@ -37,7 +37,7 @@ export const surveys: Survey[] = [
         "Over the years, forests and farmland have moved closer together, and meetings with wildlife have become more common. This survey asks households what they see: when crops get raided, which routes feel unsafe, and what small changes people have made to stay safe.",
       ],
       supportingImage: {
-        src: "/images/wildlife-terrace.jpg",
+        src: "/images/wildlife/wildlife-terrace.jpg",
         alt: "Steep terraced orchards bordering a pine forest in Kinnaur",
         caption: "Terraced orchards meeting the forest at Brua village, Kinnaur.",
       },
@@ -78,6 +78,13 @@ export const surveys: Survey[] = [
             "Whether people know how to claim compensation from the forest department, and how quickly help arrives.",
         },
       ],
+      gallery: [
+        {
+          src: "/images/wildlife/wildlife-approach.jpg",
+          alt: "Terraced village fields bordering the Binsar Wildlife Sanctuary in Uttarakhand",
+          caption: "Terraced cultivation along forest contours in Binsar where human-wildlife encounters are actively documented.",
+        },
+      ],
     },
     significance: {
       heading: "Why It Matters",
@@ -86,7 +93,7 @@ export const surveys: Survey[] = [
         "Honest accounts from people on the ground help planners and researchers find ways to reduce conflict without harming animals, while protecting both livelihoods and the mountain environment.",
       ],
       wideImage: {
-        src: "/images/wildlife-millet-fields.jpg",
+        src: "/images/wildlife/wildlife-millet-fields.jpg",
         alt: "Rainfed millet terraces on an upper slope next to a forested ridge in Garhwal",
         caption: "Millet fields in the Nayaar valley, where farming runs right up to the forest.",
       },
@@ -120,19 +127,19 @@ export const surveys: Survey[] = [
     subtitle: "Signal, shared phones and getting things done online",
     description: "How internet access and digital skills shape life in rural areas.",
     category: "Technology & Society",
-    status: "ongoing",
+    status: "unconfirmed",
     formUrl: "https://forms.gle/example2",
     forms: [
       { language: "English", url: "https://forms.gle/example2" },
     ],
-    coverImage: "/images/digital-rural-india-smart-phone.jpg",
+    coverImage: "/images/digital-learning/digital-cover.jpg",
     coverImageAlt:
-      "A village teacher teaching a lession on old board",
+      "A village teacher teaching a lesson on an old blackboard in a rural classroom",
     estimatedMinutes: 6,
     startDate: "2026-10-01",
     endDate: "2027-01-31",
     languages: ["English"],
-    featured: true,
+    featured: false,
     tags: ["digital divide", "internet", "rural", "education"],
     objective:
       "To find out how easily rural people can get online, what gets in the way, and how they use digital tools for school, business and government services.",
@@ -146,9 +153,9 @@ export const surveys: Survey[] = [
         "This survey asks how people manage government portals, online classes, digital payments and training platforms under these conditions. We care less about internet speed and more about whether these tools actually work for people.",
       ],
       supportingImage: {
-        src: "/images/04-rural-tradesperson-mobile-phone.jpg",
-        alt: "A craftsman sitting at a weekly haat using his phone beside his crafts",
-        caption: "A craftsman at a weekly haat taking orders on his phone.",
+        src: "/images/digital-learning/digital-online.jpg",
+        alt: "A craftsman sitting at a weekly haat using his mobile phone beside his crafts",
+        caption: "A craftsman at a weekly haat taking orders and checking payments on his phone.",
       },
     },
     audience: {
@@ -188,6 +195,13 @@ export const surveys: Survey[] = [
             "How confident people feel using UPI, how aware they are of fraud, and when they turn to someone else for help.",
         },
       ],
+      gallery: [
+        {
+          src: "/images/digital-learning/digital-approach.jpg",
+          alt: "A rural woman using a mobile phone in a village setting",
+          caption: "A rural resident using a mobile phone to access digital connectivity in a village.",
+        },
+      ],
     },
     significance: {
       heading: "Why It Matters",
@@ -196,7 +210,7 @@ export const surveys: Survey[] = [
         "Hearing directly from villagers helps technologists and policymakers build tools that still work offline or on a weak signal.",
       ],
       wideImage: {
-        src: "/images/digital-learning.jpg",
+        src: "/images/digital-learning/digital-learning.jpg",
         alt: "A teacher helping young students learn on a laptop in a rural classroom",
         caption: "Students using a laptop in class in Khairat village.",
       },
@@ -229,15 +243,19 @@ export const surveys: Survey[] = [
     subtitle: "How villagers judge their drinking water",
     description: "How communities see the quality of their drinking water.",
     category: "Public Health",
-    status: "unconfirmed",
-    formUrl: null,
-    coverImage: "/images/survey-water.jpg",
+    status: "ongoing",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScmxUsKvu-vrU6n5wDYKWD-ElA9mzOi5thPV7xwqvZ3j1Oq5w/viewform?usp=dialog",
+    forms: [
+      { language: "English", url: "https://docs.google.com/forms/d/e/1FAIpQLScmxUsKvu-vrU6n5wDYKWD-ElA9mzOi5thPV7xwqvZ3j1Oq5w/viewform?usp=dialog" },
+      { language: "Hindi", url: "https://docs.google.com/forms/d/e/1FAIpQLSeTYMXF8o-UWNNH_TUZtMbvbTTQGlpVeJvr4R6NAa0RJpU3dQ/viewform?usp=header" },
+    ],
+    coverImage: "/images/water/survey-water.jpg",
     coverImageAlt:
       "A natural spring flowing from rock in a Himalayan village",
     estimatedMinutes: 5,
     startDate: "2027-01-15",
     languages: ["English", "Hindi"],
-    featured: false,
+    featured: true,
     tags: ["water", "health", "public services", "environment"],
     objective:
       "To learn how people judge the safety of their drinking water, what worries them, and how they make it safer to drink.",
@@ -252,7 +270,7 @@ export const surveys: Survey[] = [
         "Now rainfall is less predictable, roads cut through the land that feeds the springs, and piped taps are replacing them. People notice cloudy water in the monsoon, a different taste in summer and weaker flow. They want to know if the water is safe, and lab tests rarely reach them in time.",
       ],
       supportingImage: {
-        src: "/images/water-naula.jpg",
+        src: "/images/water/water-naula.jpg",
         alt: "A traditional stone spring providing drinking water to a Himalayan village",
         caption: "A traditional stone spring at Sankot Naini that supplies a nearby hamlet.",
       },
@@ -294,6 +312,13 @@ export const surveys: Survey[] = [
             "Whether people trust new piped water as much as their traditional springs.",
         },
       ],
+      gallery: [
+        {
+          src: "/images/water/water-approach.jpg",
+          alt: "Natural village water supply springs flowing from stone channels at Sankot in the Himalayas",
+          caption: "Community-managed natural freshwater springs at Sankot that supply drinking water and terraced agriculture.",
+        },
+      ],
     },
     significance: {
       heading: "Why It Matters",
@@ -302,7 +327,7 @@ export const surveys: Survey[] = [
         "Understanding what people already know and do helps build community water-testing programmes that respect traditional knowledge instead of dismissing it.",
       ],
       wideImage: {
-        src: "/images/water-stream.jpg",
+        src: "/images/water/water-stream.jpg",
         alt: "A clear mountain stream running over smooth stones with ferns above it in Uttarakhand",
         caption: "A mountain stream in Uttarakhand.",
       },
@@ -310,15 +335,17 @@ export const surveys: Survey[] = [
     closingStatement:
       "Safe water is about more than test results. It is also about the bond between hill villages and their springs.",
     participation: {
-      status: "unconfirmed",
-      formUrl: null,
+      status: "ongoing",
+      formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScmxUsKvu-vrU6n5wDYKWD-ElA9mzOi5thPV7xwqvZ3j1Oq5w/viewform?usp=dialog",
+      forms: [
+        { language: "English", url: "https://docs.google.com/forms/d/e/1FAIpQLScmxUsKvu-vrU6n5wDYKWD-ElA9mzOi5thPV7xwqvZ3j1Oq5w/viewform?usp=dialog" },
+        { language: "Hindi", url: "https://docs.google.com/forms/d/e/1FAIpQLSeTYMXF8o-UWNNH_TUZtMbvbTTQGlpVeJvr4R6NAa0RJpU3dQ/viewform?usp=header" },
+      ],
       estimatedMinutes: 5,
       instructions:
-        "This survey isn't open yet. We're waiting for the final protocol to be confirmed.",
-      unavailableReason:
-        "The questionnaire and its ethics approval are still being prepared. The form will open once approval is in place.",
+        "The survey is available in English and Hindi. Pick your language below. It takes about 5 minutes.",
       privacyNotice:
-        "When the survey opens, responses will be anonymous. We won't keep names or location data.",
+        "Your responses will be anonymous. We won't keep names or location data.",
     },
     relatedSurveySlugs: [
       "preserving-traditional-ecological-knowledge",
@@ -339,7 +366,7 @@ export const surveys: Survey[] = [
     forms: [
       { language: "English", url: "https://forms.gle/example4" },
     ],
-    coverImage: "/images/survey-market.jpg",
+    coverImage: "/images/market/survey-market.jpg",
     coverImageAlt:
       "An older vendor arranging vegetables at an outdoor market stall",
     estimatedMinutes: 10,
@@ -361,7 +388,7 @@ export const surveys: Survey[] = [
         "Between March and June 2026, we looked at how many people come, how prices change through the seasons, and how small vendors give and take credit. Markets like these help local people cope when supply chains break down.",
       ],
       supportingImage: {
-        src: "/images/market-vendor.jpg",
+        src: "/images/market/market-vendor.jpg",
         alt: "An elderly woman selling fresh produce from woven baskets on the pavement",
         caption: "A grower selling seasonal produce from shallow woven baskets.",
       },
@@ -402,6 +429,13 @@ export const surveys: Survey[] = [
             "How the market works as a meeting place for news, hiring and family matters, including talk of marriages.",
         },
       ],
+      gallery: [
+        {
+          src: "/images/market/market-approach.jpg",
+          alt: "Villagers and traders negotiating at stalls in a rural weekly market haat",
+          caption: "Local vendors and buyers gathering at stalls during a weekly rural haat.",
+        },
+      ],
     },
     significance: {
       heading: "Why It Matters",
@@ -410,9 +444,9 @@ export const surveys: Survey[] = [
         "The findings give town planners evidence to protect market grounds, improve sanitation for vendors, and think twice before bringing in rules that push vendors out.",
       ],
       wideImage: {
-        src: "/images/market-stall.jpg",
-        alt: "A market stall piled with fresh, colourful vegetables",
-        caption: "A busy stall of fresh seasonal vegetables.",
+        src: "/images/market/market-significance.jpg",
+        alt: "Freshly harvested vegetables laid out at an open-air market stall",
+        caption: "Fresh seasonal vegetables arranged across vibrant community market stalls.",
       },
     },
     closingStatement:
@@ -449,7 +483,7 @@ export const surveys: Survey[] = [
     forms: [
       { language: "English", url: "https://forms.gle/example5" },
     ],
-    coverImage: "/images/survey-migration.jpg",
+    coverImage: "/images/migration/survey-migration.jpg",
     coverImageAlt:
       "A young man sitting on a bench at a bus stop above a valley in Shimla",
     estimatedMinutes: 7,
@@ -471,7 +505,7 @@ export const surveys: Survey[] = [
         "Leaving is rarely easy. It means missing family, paying high rents in the city and longing for clean mountain air. This survey asks what makes people leave, what keeps them connected to home, and what would make it possible to build a career in the hills.",
       ],
       supportingImage: {
-        src: "/images/migration-students.jpg",
+        src: "/images/migration/migration-students.jpg",
         alt: "College students lining up to board a bus in Srinagar Garhwal",
         caption: "Students boarding a bus in Garhwal for their daily trip to college.",
       },
@@ -513,6 +547,13 @@ export const surveys: Survey[] = [
             "Which things would make young people return, such as fast broadband, specialist healthcare or easier credit.",
         },
       ],
+      gallery: [
+        {
+          src: "/images/migration/migration-approach.jpg",
+          alt: "Young people on a hilltop ridge overlooking Himalayan valleys in Pauri Garhwal",
+          caption: "Young people gathered at Kandoliya ground on a high ridge overlooking Garhwal valleys in Pauri.",
+        },
+      ],
     },
     significance: {
       heading: "Why It Matters",
@@ -521,7 +562,7 @@ export const surveys: Survey[] = [
         "Hearing from young people themselves helps agencies plan practical youth policies, training funds and digital infrastructure that build mountain economies instead of draining them.",
       ],
       wideImage: {
-        src: "/images/migration-almora-ridge.jpg",
+        src: "/images/migration/migration-almora-ridge.jpg",
         alt: "The hill town of Almora spread along a high ridge with mountains behind it",
         caption: "Almora on its ridge in Uttarakhand, where young people weigh staying against leaving.",
       },
@@ -554,15 +595,19 @@ export const surveys: Survey[] = [
     subtitle: "Seeds, herbs, water channels and what elders know",
     description: "Recording how mountain communities pass down their knowledge of nature.",
     category: "Culture & Heritage",
-    status: "unconfirmed",
-    formUrl: null,
-    coverImage: "/images/survey-tradition.jpg",
+    status: "ongoing",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScmxUsKvu-vrU6n5wDYKWD-ElA9mzOi5thPV7xwqvZ3j1Oq5w/viewform?usp=dialog",
+    forms: [
+      { language: "English", url: "https://docs.google.com/forms/d/e/1FAIpQLScmxUsKvu-vrU6n5wDYKWD-ElA9mzOi5thPV7xwqvZ3j1Oq5w/viewform?usp=dialog" },
+      { language: "Hindi", url: "https://docs.google.com/forms/d/e/1FAIpQLSeTYMXF8o-UWNNH_TUZtMbvbTTQGlpVeJvr4R6NAa0RJpU3dQ/viewform?usp=header" },
+    ],
+    coverImage: "/images/traditional/survey-tradition.jpg",
     coverImageAlt:
       "Brahmakamal, a sacred medicinal flower, blooming at 13,000 feet in Chamoli",
     estimatedMinutes: 12,
     startDate: "2027-03-01",
     languages: ["English", "Hindi"],
-    featured: false,
+    featured: true,
     tags: ["traditional knowledge", "ecology", "culture", "heritage"],
     objective:
       "To record the traditional knowledge about nature that mountain communities hold, and to see how it is being passed on, kept or lost.",
@@ -577,7 +622,7 @@ export const surveys: Survey[] = [
         "Today, schools rarely teach local plants and many young people are moving away, so much of this knowledge now rests with village elders. This survey asks which parts are still used every day, which are at risk of being lost, and how communities would like to protect them.",
       ],
       supportingImage: {
-        src: "/images/tradition-terrace.jpg",
+        src: "/images/traditional/tradition-terrace.jpg",
         alt: "Stone-walled terraced fields with traditional water channels on a Himalayan slope in Uttarakhand",
         caption: "Dry-stone terraces and gravity-fed channels in Uttarakhand that hold moisture and stop soil from washing away.",
       },
@@ -618,6 +663,13 @@ export const surveys: Survey[] = [
             "How knowledge moves from village storytelling into writing, and from elders to young apprentices.",
         },
       ],
+      gallery: [
+        {
+          src: "/images/traditional/tradition-approach.jpg",
+          alt: "Traditional heirloom red rice terraces in Peja village, Rohru",
+          caption: "Heirloom red rice terraces in the Pabbar River valley at Peja village, Rohru.",
+        },
+      ],
     },
     significance: {
       heading: "Why It Matters",
@@ -626,23 +678,25 @@ export const surveys: Survey[] = [
         "Protecting this knowledge isn't nostalgia. It helps communities adapt, stay self-reliant and protect the variety of life in the mountains.",
       ],
       wideImage: {
-        src: "/images/tradition-seed-storage.jpg",
-        alt: "A craftsman weaving a bamboo Duli basket used to store seeds",
-        caption: "A craftsman weaving a bamboo Duli basket, built to let air through and keep seeds safe.",
+        src: "/images/traditional/tradition-significance.jpg",
+        alt: "Rainfed terraced paddy fields carved into mountain slopes in Kumaon, Uttarakhand",
+        caption: "Dry-stone terraces and rainfed paddy farming across the Kumaon hills in Uttarakhand.",
       },
     },
     closingStatement:
       "Traditional knowledge isn't just history. It is still a guide to living well with the mountains.",
     participation: {
-      status: "unconfirmed",
-      formUrl: null,
+      status: "ongoing",
+      formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScmxUsKvu-vrU6n5wDYKWD-ElA9mzOi5thPV7xwqvZ3j1Oq5w/viewform?usp=dialog",
+      forms: [
+        { language: "English", url: "https://docs.google.com/forms/d/e/1FAIpQLScmxUsKvu-vrU6n5wDYKWD-ElA9mzOi5thPV7xwqvZ3j1Oq5w/viewform?usp=dialog" },
+        { language: "Hindi", url: "https://docs.google.com/forms/d/e/1FAIpQLSeTYMXF8o-UWNNH_TUZtMbvbTTQGlpVeJvr4R6NAa0RJpU3dQ/viewform?usp=header" },
+      ],
       estimatedMinutes: 12,
       instructions:
-        "This survey isn't open yet. We're waiting for the final protocol to be confirmed.",
-      unavailableReason:
-        "We are still agreeing the research plan and consent process with local institutions. The survey will open once they are approved.",
+        "The survey is available in English and Hindi. Pick your language below. It takes about 12 minutes.",
       privacyNotice:
-        "When the survey opens, shared knowledge will be credited following community protocols, and you can choose to stay anonymous.",
+        "Shared knowledge will be credited following community protocols, and you can choose to stay anonymous.",
     },
     relatedSurveySlugs: [
       "wild-life-impact-hilly-regions",
@@ -663,7 +717,7 @@ export const surveys: Survey[] = [
     forms: [
       { language: "English", url: "https://forms.gle/example7" },
     ],
-    coverImage: "/images/survey-transport.jpg",
+    coverImage: "/images/transport/survey-transport.jpg",
     coverImageAlt:
       "A state bus passing under a rock overhang at Taranda Dhank in Kinnaur",
     estimatedMinutes: 6,
@@ -685,9 +739,9 @@ export const surveys: Survey[] = [
         "From January to May 2026, we asked daily commuters on high mountain roads how often buses run, how they cope with winter disruptions, how crowded the buses get, and how far they walk to reach the nearest road.",
       ],
       supportingImage: {
-        src: "/images/transport-bus-stop.jpg",
-        alt: "A boy waiting at a roadside bus stop above a deep valley in Shimla",
-        caption: "A boy waiting at a roadside bus stop above a deep valley in Shimla.",
+        src: "/images/transport/transport-lifeline.jpg",
+        alt: "A roadside bus stop above a deep mountain valley on the Shimla-Tatapani-Mandi road",
+        caption: "A roadside bus stop on the Shimla-Tatapani ridge where daily commuters gather for valley routes.",
       },
     },
     audience: {
@@ -726,6 +780,13 @@ export const surveys: Survey[] = [
             "How fares affect low-income families, and how much student passes help.",
         },
       ],
+      gallery: [
+        {
+          src: "/images/transport/transport-approach.jpg",
+          alt: "A public transit bus navigating steep mountain roads between rural valleys in Himachal Pradesh",
+          caption: "A regional public transit bus navigating high mountain gradient roads between valleys in Himachal Pradesh.",
+        },
+      ],
     },
     significance: {
       heading: "Why It Matters",
@@ -734,7 +795,7 @@ export const surveys: Survey[] = [
         "The findings give state transport corporations evidence to use their buses better, repair dangerous road edges and prioritise remote branch routes.",
       ],
       wideImage: {
-        src: "/images/transport-ridge-bus.jpg",
+        src: "/images/transport/transport-ridge-bus.jpg",
         alt: "A state bus on a rough mountain road heading toward Parashar",
         caption: "A bus climbing the Parashar ridge road.",
       },
@@ -768,9 +829,9 @@ export const surveys: Survey[] = [
     subtitle: "Talking about stress, stigma and support",
     description: "How rural people see mental health and where they find support.",
     category: "Public Health",
-    status: "unconfirmed",
+    status: "completed",
     formUrl: null,
-    coverImage: "/images/survey-health.jpg",
+    coverImage: "/images/mental-health/survey-health.jpg",
     coverImageAlt:
       "A person walking along a dirt lane through green fields in morning light",
     estimatedMinutes: 8,
@@ -790,7 +851,7 @@ export const surveys: Survey[] = [
         "At the same time, villages have their own ways of helping: trusted elders, chats at the tea stall, family, and time spent outdoors. This survey asks how people understand and support wellbeing in their own words, without forcing clinical labels on them.",
       ],
       supportingImage: {
-        src: "/images/health-conversation.jpg",
+        src: "/images/mental-health/health-conversation.jpg",
         alt: "Two people talking quietly on a shaded path",
         caption: "Two people talking quietly on a shaded path.",
       },
@@ -832,6 +893,13 @@ export const surveys: Survey[] = [
             "How walks in nature, religious gatherings, shared work (paddi) and conversation with family help people.",
         },
       ],
+      gallery: [
+        {
+          src: "/images/mental-health/health-approach.jpg",
+          alt: "Frontline ASHA workers and community health staff holding a consultation meeting",
+          caption: "ASHA workers and healthcare staff gathered for a community health and wellbeing consultation.",
+        },
+      ],
     },
     significance: {
       heading: "Why It Matters",
@@ -840,7 +908,7 @@ export const surveys: Survey[] = [
         "Talking respectfully, and recording how communities already cope, is a first step toward reducing stigma and building care that starts in the community.",
       ],
       wideImage: {
-        src: "/images/health-village-vista.jpg",
+        src: "/images/mental-health/health-village-vista.jpg",
         alt: "A quiet hill village among rolling valley slopes in soft daylight",
         caption: "A quiet valley village in the morning light.",
       },

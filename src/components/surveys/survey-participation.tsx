@@ -1,5 +1,15 @@
-import { ExternalLink, Clock, ShieldCheck, CheckCircle2, AlertCircle } from "lucide-react";
+import { useState } from "react";
+import {
+  ExternalLink,
+  Clock,
+  ShieldCheck,
+  CheckCircle2,
+  AlertCircle,
+  Lock,
+} from "lucide-react";
 import type { Survey } from "@/types/survey";
+import { isSurveyProtected } from "@/lib/survey-security";
+import { PasswordFormDialog } from "@/components/surveys/password-form-dialog";
 
 interface SurveyParticipationProps {
   survey: Survey;
@@ -16,6 +26,22 @@ export function SurveyParticipation({ survey }: SurveyParticipationProps) {
     participation?.privacyNotice ??
     survey.privacyNote ??
     "All responses are anonymous. No personally identifiable information is collected.";
+
+  const isProtected = isSurveyProtected(survey);
+  const [passwordDialogOpen, setPasswordDialogOpen] = useState(false);
+  const [pendingFormUrl, setPendingFormUrl] = useState<string | null>(null);
+
+  const handleOpenForm = (targetUrl: string) => {
+    setPendingFormUrl(targetUrl);
+    setPasswordDialogOpen(true);
+  };
+
+  const handlePasswordSuccess = () => {
+    if (pendingFormUrl) {
+      window.open(pendingFormUrl, "_blank", "noopener,noreferrer");
+      setPendingFormUrl(null);
+    }
+  };
 
   return (
     <div className="block-section w-full bg-[#ece4df] py-16 sm:py-20 md:py-24 xl:py-28">
@@ -44,32 +70,64 @@ export function SurveyParticipation({ survey }: SurveyParticipationProps) {
 
                 {/* Authentic Google Forms buttons with language choices */}
                 {forms.length > 1 ? (
-                  <div className="flex flex-wrap gap-4 pt-2">
-                    {forms.map((f) => (
-                      <a
-                        key={f.language}
-                        href={f.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-full bg-plum px-7 py-3.5 text-base font-medium text-[#dfd5cb] shadow-xs transition-transform duration-200 hover:scale-[1.02] hover:bg-plum-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum cursor-pointer"
-                      >
-                        <span style={{ color: "#dfd5cb" }}>Participate in {f.language}</span>
-                        <ExternalLink className="h-4 w-4 text-[#dfd5cb]" />
-
-                      </a>
-                    ))}
+                  <div className="flex flex-wrap gap-4 pt-2 mt-8">
+                    {forms.map((f) =>
+                      isProtected ? (
+                        <button
+                          key={f.language}
+                          type="button"
+                          onClick={() => handleOpenForm(f.url)}
+                          className="inline-flex items-center gap-2 rounded-full bg-plum px-7 py-3.5 text-base font-medium text-[#dfd5cb] shadow-xs transition-transform duration-200 hover:scale-[1.02] hover:bg-plum-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum cursor-pointer"
+                        >
+                          <Lock className="h-4 w-4 text-[#dfd5cb]" />
+                          <span style={{ color: "#dfd5cb" }}>
+                            Participate in {f.language}
+                          </span>
+                          <ExternalLink className="h-4 w-4 text-[#dfd5cb]" />
+                        </button>
+                      ) : (
+                        <a
+                          key={f.language}
+                          href={f.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 rounded-full bg-plum px-7 py-3.5 text-base font-medium text-[#dfd5cb] shadow-xs transition-transform duration-200 hover:scale-[1.02] hover:bg-plum-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum cursor-pointer"
+                        >
+                          <span style={{ color: "#dfd5cb" }}>
+                            Participate in {f.language}
+                          </span>
+                          <ExternalLink className="h-4 w-4 text-[#dfd5cb]" />
+                        </a>
+                      )
+                    )}
                   </div>
                 ) : (
                   <div className="pt-2">
-                    <a
-                      href={formUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-full bg-plum px-8 py-4 text-base font-medium text-[#dfd5cb] shadow-xs transition-transform duration-200 hover:scale-[1.02] hover:bg-plum-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum cursor-pointer"
-                    >
-                      <span style={{ color: "#dfd5cb" }}>Open Google Forms questionnaire</span>
-                      <ExternalLink className="h-4 w-4 "  />
-                    </a>
+                    {isProtected ? (
+                      <button
+                        type="button"
+                        onClick={() => handleOpenForm(formUrl)}
+                        className="inline-flex items-center gap-2 rounded-full bg-plum px-8 py-4 text-base font-medium text-[#dfd5cb] shadow-xs transition-transform duration-200 hover:scale-[1.02] hover:bg-plum-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum cursor-pointer"
+                      >
+                        <Lock className="h-4 w-4 text-[#dfd5cb]" />
+                        <span style={{ color: "#dfd5cb" }}>
+                          Open Google Forms questionnaire
+                        </span>
+                        <ExternalLink className="h-4 w-4 text-[#dfd5cb]" />
+                      </button>
+                    ) : (
+                      <a
+                        href={formUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 rounded-full bg-plum px-8 py-4 text-base font-medium text-[#dfd5cb] shadow-xs transition-transform duration-200 hover:scale-[1.02] hover:bg-plum-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum cursor-pointer"
+                      >
+                        <span style={{ color: "#dfd5cb" }}>
+                          Open Google Forms questionnaire
+                        </span>
+                        <ExternalLink className="h-4 w-4 text-[#dfd5cb]" />
+                      </a>
+                    )}
                   </div>
                 )}
 
@@ -142,6 +200,13 @@ export function SurveyParticipation({ survey }: SurveyParticipationProps) {
           </div>
         </div>
       </div>
+
+      <PasswordFormDialog
+        open={passwordDialogOpen}
+        onOpenChange={setPasswordDialogOpen}
+        surveyTitle={survey.title}
+        onSuccess={handlePasswordSuccess}
+      />
     </div>
   );
 }

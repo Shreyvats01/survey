@@ -31,7 +31,7 @@ export function ArchivePage() {
 
   return (
     <main className="relative z-10 flex-1">
-      <Container className="max-w-[1376px] px-4 min-[688px]:px-8 min-[1312px]:px-16 py-8 md:py-16">
+      <Container className="max-w-[1376px] px-4 min-[688px]:px-8 min-[1312px]:px-16 py-2 md:py-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -1,5 +1,5 @@
-import { describe, it, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { describe, it, expect, vi, beforeEach } from "vitest";
+import { render, screen, fireEvent } from "@testing-library/react";
 import { SurveyCTA } from "../surveys/survey-cta";
 import type { Survey } from "@/types/survey";
 
@@ -122,5 +122,52 @@ describe("SurveyCTA", () => {
     expect(
       screen.getByText("The form link for this survey is not yet available.")
     ).toBeInTheDocument();
+  });
+
+  describe("Security protection handling", () => {
+    beforeEach(() => {
+      vi.restoreAllMocks();
+    });
+
+    it("displays password protected indicator and intercepts link clicks to require password", () => {
+      const openSpy = vi.spyOn(window, "open").mockImplementation(() => null);
+
+      render(<SurveyCTA survey={baseSurvey} />);
+
+      expect(screen.getByText("Password Protected")).toBeInTheDocument();
+
+      const link = screen.getByRole("link", { name: /take this survey/i });
+      fireEvent.click(link);
+
+      // Dialog is opened
+      expect(screen.getByText("Protected Survey Access")).toBeInTheDocument();
+      expect(screen.getByPlaceholderText("Enter password")).toBeInTheDocument();
+
+      // Enter correct password
+      const input = screen.getByPlaceholderText("Enter password");
+      fireEvent.change(input, { target: { value: "shrey1234@" } });
+      fireEvent.click(screen.getByRole("button", { name: /unlock & open form/i }));
+
+      expect(openSpy).toHaveBeenCalledWith(
+        "https://forms.gle/sample",
+        "_blank",
+        "noopener,noreferrer"
+      );
+    });
+
+    it("does not show password protected indicator for public survey (Wildlife in the Hills)", () => {
+      const publicSurvey: Survey = {
+        ...baseSurvey,
+        slug: "wild-life-impact-hilly-regions",
+        title: "Wildlife in the Hills",
+      };
+
+      render(<SurveyCTA survey={publicSurvey} />);
+
+      expect(screen.queryByText("Password Protected")).not.toBeInTheDocument();
+
+      const link = screen.getByRole("link", { name: /take this survey/i });
+      expect(link).toHaveAttribute("href", "https://forms.gle/sample");
+    });
   });
 });

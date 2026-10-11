@@ -1,8 +1,9 @@
 
 
 import { Link } from "react-router";
-import { Clock, Globe } from "lucide-react";
+import { Clock, Globe, Lock, ShieldCheck } from "lucide-react";
 import type { Survey } from "@/types/survey";
+import { isSurveyProtected } from "@/lib/survey-security";
 import { SurveyStatus } from "./survey-status";
 
 interface SurveyHeroProps {
@@ -30,6 +31,7 @@ function formatPostedDate(dateStr?: string): string {
 export function SurveyHero({ survey }: SurveyHeroProps) {
   const subtitle = survey.subtitle || survey.description;
   const postedDate = formatPostedDate(survey.startDate);
+  const isProtected = isSurveyProtected(survey);
 
   const authorOrCategory =
     (survey as { author?: string }).author || survey.category;
@@ -160,7 +162,7 @@ export function SurveyHero({ survey }: SurveyHeroProps) {
             >
               <div className="h-[60px] w-[60px] shrink-0 overflow-hidden rounded-full">
                 <img
-                  src="/images/hero-portrait-solitary-field.jpg"
+                  src="/images/hero/hero-portrait-solitary-field.jpg"
                   alt=""
                   aria-hidden="true"
                   className="h-full w-full rounded-full object-cover grayscale"
@@ -198,6 +200,14 @@ export function SurveyHero({ survey }: SurveyHeroProps) {
             "
           >
             <SurveyStatus status={survey.status} />
+
+            {isProtected && (
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-plum/10 text-plum px-3 py-1 text-xs font-medium">
+                <Lock className="h-3.5 w-3.5" />
+                <ShieldCheck className="h-3.5 w-3.5" />
+                <span>Password Protected</span>
+              </span>
+            )}
 
             {survey.estimatedMinutes && (
               <span className="inline-flex items-center gap-1.5">

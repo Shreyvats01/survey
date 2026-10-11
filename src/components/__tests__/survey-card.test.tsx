@@ -87,4 +87,33 @@ describe("SurveyCard", () => {
     expect(image).toBeInTheDocument();
     expect(image).toHaveAttribute("src", mockSurvey.coverImage);
   });
+
+  it("renders password protected badge and metadata for protected survey", () => {
+    render(
+      <MemoryRouter>
+        <SurveyCard survey={mockSurvey} />
+      </MemoryRouter>
+    );
+
+    expect(screen.getByText("Password Protected")).toBeInTheDocument();
+    expect(screen.getByText("Protected")).toBeInTheDocument();
+  });
+
+  it("does not render password protected badges for public survey (Wildlife in the Hills)", () => {
+    const publicSurvey: Survey = {
+      ...mockSurvey,
+      id: "1",
+      slug: "wild-life-impact-hilly-regions",
+      title: "Wildlife in the Hills",
+    };
+
+    render(
+      <MemoryRouter>
+        <SurveyCard survey={publicSurvey} />
+      </MemoryRouter>
+    );
+
+    expect(screen.queryByText("Password Protected")).not.toBeInTheDocument();
+    expect(screen.queryByText("Protected")).not.toBeInTheDocument();
+  });
 });

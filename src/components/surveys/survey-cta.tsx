@@ -1,6 +1,9 @@
+import { useState, type MouseEvent } from "react";
 import { cn } from "@/lib/utils";
-import { ExternalLink, Clock } from "lucide-react";
+import { ExternalLink, Clock, Lock, ShieldCheck } from "lucide-react";
 import type { Survey } from "@/types/survey";
+import { isSurveyProtected } from "@/lib/survey-security";
+import { PasswordFormDialog } from "@/components/surveys/password-form-dialog";
 
 interface SurveyCTAProps {
   survey: Survey;
@@ -8,6 +11,25 @@ interface SurveyCTAProps {
 }
 
 export function SurveyCTA({ survey, className }: SurveyCTAProps) {
+  const isProtected = isSurveyProtected(survey);
+  const [passwordDialogOpen, setPasswordDialogOpen] = useState(false);
+  const [pendingFormUrl, setPendingFormUrl] = useState<string | null>(null);
+
+  const handleLinkClick = (e: MouseEvent<HTMLAnchorElement>, url: string) => {
+    if (isProtected) {
+      e.preventDefault();
+      setPendingFormUrl(url);
+      setPasswordDialogOpen(true);
+    }
+  };
+
+  const handlePasswordSuccess = () => {
+    if (pendingFormUrl) {
+      window.open(pendingFormUrl, "_blank", "noopener,noreferrer");
+      setPendingFormUrl(null);
+    }
+  };
+
   if (survey.status === "upcoming") {
     return (
       <div className={cn("space-y-3", className)}>
@@ -43,10 +65,17 @@ export function SurveyCTA({ survey, className }: SurveyCTAProps) {
     );
   }
 
-  // Ongoing survey with forms
+  // Ongoing survey with multiple forms
   if (survey.forms && survey.forms.length > 1) {
     return (
       <div className={cn("space-y-3", className)}>
+        {isProtected && (
+          <div className="flex items-center gap-1.5 text-xs font-medium text-plum/70">
+            <Lock className="h-3.5 w-3.5" />
+            <ShieldCheck className="h-3.5 w-3.5" />
+            <span>Password Protected</span>
+          </div>
+        )}
         <p className="text-sm font-medium text-plum/70">
           Available in {survey.forms.length} languages:
         </p>
@@ -57,13 +86,21 @@ export function SurveyCTA({ survey, className }: SurveyCTAProps) {
               href={form.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-plum px-6 py-3.5 text-base font-medium text-cream transition-colors duration-300 hover:bg-plum/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum"
+              onClick={(e) => handleLinkClick(e, form.url)}
+              className="inline-flex items-center gap-2 rounded-full bg-plum px-6 py-3.5 text-base font-medium text-cream transition-colors duration-300 hover:bg-plum/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum cursor-pointer"
             >
+              {isProtected && <Lock className="h-4 w-4" />}
               <ExternalLink className="h-4 w-4" />
               Take Survey ({form.language})
             </a>
           ))}
         </div>
+        <PasswordFormDialog
+          open={passwordDialogOpen}
+          onOpenChange={setPasswordDialogOpen}
+          surveyTitle={survey.title}
+          onSuccess={handlePasswordSuccess}
+        />
       </div>
     );
   }
@@ -87,12 +124,21 @@ export function SurveyCTA({ survey, className }: SurveyCTAProps) {
 
   return (
     <div className={cn("space-y-3", className)}>
+      {isProtected && (
+        <div className="flex items-center gap-1.5 text-xs font-medium text-plum/70">
+          <Lock className="h-3.5 w-3.5" />
+          <ShieldCheck className="h-3.5 w-3.5" />
+          <span>Password Protected</span>
+        </div>
+      )}
       <a
         href={survey.formUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 rounded-full bg-plum px-8 py-4 text-base font-medium text-cream transition-colors duration-300 hover:bg-plum/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum"
+        onClick={(e) => handleLinkClick(e, survey.formUrl!)}
+        className="inline-flex items-center gap-2 rounded-full bg-plum px-8 py-4 text-base font-medium text-cream transition-colors duration-300 hover:bg-plum/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum cursor-pointer"
       >
+        {isProtected && <Lock className="h-5 w-5" />}
         <ExternalLink className="h-5 w-5" />
         Take This Survey
       </a>
@@ -101,6 +147,12 @@ export function SurveyCTA({ survey, className }: SurveyCTAProps) {
           Estimated time: {survey.estimatedMinutes} minutes
         </p>
       )}
+      <PasswordFormDialog
+        open={passwordDialogOpen}
+        onOpenChange={setPasswordDialogOpen}
+        surveyTitle={survey.title}
+        onSuccess={handlePasswordSuccess}
+      />
     </div>
   );
 }
