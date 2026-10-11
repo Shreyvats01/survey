@@ -132,6 +132,13 @@ export function SurveyHero({ survey }: SurveyHeroProps) {
                     focus-visible:outline-plum
                     md:text-base
                   "
+                  onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#dfd5cb";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "#222";
+                      }}
+
                 >
                   {tag}
                 </Link>

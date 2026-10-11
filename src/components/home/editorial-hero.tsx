@@ -61,6 +61,7 @@ export function EditorialHero() {
           <Link
             to="/archive"
             className="inline-flex items-center justify-center rounded-full border border-plum/40 px-8 py-3.5 font-serif text-lg text-plum transition-all duration-300 hover:border-plum hover:bg-plum hover:text-cream focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-plum md:text-xl"
+            
           >
             Browse all {surveys.length} surveys
             <span className="ml-3" aria-hidden="true">→</span>

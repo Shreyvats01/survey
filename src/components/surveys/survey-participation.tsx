@@ -67,8 +67,8 @@ export function SurveyParticipation({ survey }: SurveyParticipationProps) {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 rounded-full bg-plum px-8 py-4 text-base font-medium text-[#dfd5cb] shadow-xs transition-transform duration-200 hover:scale-[1.02] hover:bg-plum-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum cursor-pointer"
                     >
-                      <span>Open Google Forms questionnaire</span>
-                      <ExternalLink className="h-4 w-4" />
+                      <span style={{ color: "#dfd5cb" }}>Open Google Forms questionnaire</span>
+                      <ExternalLink className="h-4 w-4 "  />
                     </a>
                   </div>
                 )}

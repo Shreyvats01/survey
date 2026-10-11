@@ -5,10 +5,9 @@ export const surveys: Survey[] = [
     id: "1",
     slug: "wild-life-impact-hilly-regions",
     aliases: ["wild-life-impact"],
-    title: "Wild Life Impact in Hilly Regions",
-    subtitle: "Everyday Coexistence, Crop Depredation, and Adaptive Livelihoods",
-    description:
-      "How wild animal impact the daily life in hilly region",
+    title: "Wildlife in the Hills",
+    subtitle: "Crops, livestock and daily life near the forest",
+    description: "How wild animals affect everyday life in hill villages.",
     category: "Environment & Wildlife",
     status: "ongoing",
     formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScmxUsKvu-vrU6n5wDYKWD-ElA9mzOi5thPV7xwqvZ3j1Oq5w/viewform?usp=dialog",
@@ -18,7 +17,7 @@ export const surveys: Survey[] = [
     ],
     coverImage: "/images/survey-wildlife.jpg",
     coverImageAlt:
-      "Himalayan forest fringe settlement with terraced fields bordering dense mountain forest in Mandi",
+      "Terraced fields at the edge of a dense mountain forest in Mandi",
     estimatedMinutes: 8,
     startDate: "2026-09-15",
     endDate: "2026-12-31",
@@ -26,75 +25,74 @@ export const surveys: Survey[] = [
     featured: true,
     tags: ["wildlife", "rural", "agriculture", "safety"],
     objective:
-      "To document the frequency, nature, and impact of wild animal encounters on communities living near forest areas in hilly terrain, and to understand local coping strategies.",
+      "To understand how often villagers near forests meet wild animals, what damage it causes, and how families cope.",
     targetAudience:
-      "Residents of hilly and mountainous regions who live near forests or wildlife habitats",
+      "People living in hill villages close to forests or wildlife areas",
     privacyNote:
-      "All responses are anonymous. No personally identifiable information is collected.",
+      "Your responses are anonymous. We don't collect any personal information.",
     about: {
-      heading: "Living on the Edge of Wilderness",
+      heading: "Life at the Forest Edge",
       paragraphs: [
-        "In mountain settlements nestled against reserve forests and wildlife sanctuaries, everyday routines are inextricably tied to wildlife movement. Terraced fields carved into steep slopes border dense oak and deodar canopies, forming an active corridor where wild ungulates, leopards, and macaques forage.",
-        "As forest boundaries shift and agricultural land contracts, interactions between farming households and forest wildlife have intensified. This research documents how households perceive these encounters, the seasonal peaks in crop raiding, and the subtle shifts in daily routines required to navigate vulnerable routes between villages and highland pastures.",
+        "In many hill villages, the forest starts where the last terraced field ends. Monkeys, deer and leopards move through these fields and paths, and families plan their days around them.",
+        "Over the years, forests and farmland have moved closer together, and meetings with wildlife have become more common. This survey asks households what they see: when crops get raided, which routes feel unsafe, and what small changes people have made to stay safe.",
       ],
       supportingImage: {
         src: "/images/wildlife-terrace.jpg",
-        alt: "Steep terraced mountain village and apple orchards bordering pine forest in Kinnaur",
-        caption: "Brua village in Kinnaur, where steep terraced orchards directly border contiguous forest tracts.",
+        alt: "Steep terraced orchards bordering a pine forest in Kinnaur",
+        caption: "Terraced orchards meeting the forest at Brua village, Kinnaur.",
       },
     },
     audience: {
-      heading: "Who Should Participate?",
+      heading: "Who Can Take Part",
       description:
-        "We invite voices from across Himalayan and hilly districts who live, farm, or work in close proximity to forest belts.",
+        "If you live, farm or work near a forest in the hills, we would like to hear from you.",
       targetGroups: [
-        "Smallholder farmers managing terraced crop fields or orchards",
-        "Pastoral herders and livestock keepers utilizing highland fringes",
-        "Forest fringe residents and hamlet representatives",
-        "Local school commuters and daily path travelers navigating early morning and dusk routes",
+        "Farmers with terraced fields or orchards",
+        "Herders and people who keep livestock",
+        "Residents of villages and hamlets at the forest edge",
+        "Anyone who walks to school, work or the forest at dawn or dusk",
       ],
     },
     exploration: {
-      heading: "What This Survey Explores",
-      intro:
-        "Our inquiry is organized around four structural dimensions of everyday human-wildlife encounters.",
+      heading: "What We're Asking About",
+      intro: "The survey looks at four parts of life alongside wildlife.",
       topics: [
         {
-          title: "Crop Depredation & Harvest Protection",
+          title: "Crop Damage",
           description:
-            "Assessing seasonal raiding patterns on millet, corn, and vegetable terraces, alongside the efficacy of traditional watchtowers and physical deterrents.",
+            "When animals raid millet, maize and vegetable fields, and what actually keeps them away, from watchtowers to fences.",
         },
         {
-          title: "Livestock Vulnerability & Pastoral Defense",
+          title: "Livestock Safety",
           description:
-            "Documenting predation risks for cattle and sheep, nighttime enclosure practices, and reliance on indigenous Himalayan guardian dogs.",
+            "How often cattle and sheep are attacked, how animals are kept safe at night, and how much people rely on guard dogs.",
         },
         {
-          title: "Daily Transit & Commuter Safety",
+          title: "Safe Travel",
           description:
-            "Understanding how walking habits, school journeys, and firewood collection schedules are modified around dawn and dusk predator activity.",
+            "How walking to school or collecting firewood changes around dawn and dusk, when predators are most active.",
         },
         {
-          title: "Institutional Reporting & Relief Mechanisms",
+          title: "Reporting and Compensation",
           description:
-            "Evaluating awareness and accessibility of forest department compensation claims, response times, and local mitigation support.",
+            "Whether people know how to claim compensation from the forest department, and how quickly help arrives.",
         },
       ],
     },
     significance: {
-      heading: "Why This Topic Matters",
+      heading: "Why It Matters",
       paragraphs: [
-        "Human-wildlife encounters in hilly regions are frequently sensationalized in regional headlines, obscuring the nuanced, long-term economic drain borne by smallholder farming families. When an entire season of finger millet or potato harvest is lost in a single night, the consequences reverberate across household food security and rural out-migration.",
-        "Documenting authentic ground observations allows community planners and ecological researchers to design non-lethal, sustainable mitigation strategies that protect both rural livelihoods and vital Himalayan biodiversity.",
+        "News about wild animals in the hills usually focuses on dramatic moments. The slower cost gets far less attention. A family can lose a whole season of millet or potatoes in a single night, and that affects their food supply and can push them to leave the village.",
+        "Honest accounts from people on the ground help planners and researchers find ways to reduce conflict without harming animals, while protecting both livelihoods and the mountain environment.",
       ],
       wideImage: {
         src: "/images/wildlife-millet-fields.jpg",
-        alt: "Rainfed terraced millet fields on upper slopes bordering forested ridge in Garhwal",
-        caption: "Upper Nayaar valley millet fields where forest boundaries directly interface with subsistence cultivation.",
+        alt: "Rainfed millet terraces on an upper slope next to a forested ridge in Garhwal",
+        caption: "Millet fields in the Nayaar valley, where farming runs right up to the forest.",
       },
     },
     closingStatement:
-      "Coexistence on steep terrain requires balancing ecological conservation with the dignity, safety, and economic survival of mountain communities.",
+      "Living alongside wildlife only works when both nature and the people of the mountains are looked after.",
     participation: {
       status: "ongoing",
       formUrl: "https://forms.gle/example1",
@@ -104,9 +102,9 @@ export const surveys: Survey[] = [
       ],
       estimatedMinutes: 8,
       instructions:
-        "The survey is available in both English and Hindi. Choose your preferred language below. It takes approximately 8 minutes to complete.",
+        "The survey is available in English and Hindi. Pick your language below. It takes about 8 minutes.",
       privacyNotice:
-        "All responses are anonymous. No personally identifiable information or contact details are collected or stored.",
+        "Your responses are anonymous. We don't collect or store names or contact details.",
     },
     relatedSurveySlugs: [
       "preserving-traditional-ecological-knowledge",
@@ -118,19 +116,18 @@ export const surveys: Survey[] = [
     id: "2",
     slug: "digital-access-rural-communities",
     aliases: ["rural-digital-access"],
-    title: "Digital Access in Rural Communities",
-    subtitle: "Bandwidth, Device Sharing, and Civic Connectivity Across Rural Settlements",
-    description:
-      "Exploring how internet connectivity and digital literacy shape opportunities in rural areas.",
+    title: "Digital Access in Villages",
+    subtitle: "Signal, shared phones and getting things done online",
+    description: "How internet access and digital skills shape life in rural areas.",
     category: "Technology & Society",
     status: "ongoing",
     formUrl: "https://forms.gle/example2",
     forms: [
       { language: "English", url: "https://forms.gle/example2" },
     ],
-    coverImage: "/images/survey-digital.jpg",
+    coverImage: "/images/digital-rural-india-smart-phone.jpg",
     coverImageAlt:
-      "A primary school teacher in a rural village holding a smartphone to show a digital lesson to seated students",
+      "A village teacher teaching a lession on old board",
     estimatedMinutes: 6,
     startDate: "2026-10-01",
     endDate: "2027-01-31",
@@ -138,74 +135,74 @@ export const surveys: Survey[] = [
     featured: true,
     tags: ["digital divide", "internet", "rural", "education"],
     objective:
-      "To map current levels of digital access, identify barriers to connectivity, and understand how digital tools are used for education, commerce, and governance in rural settings.",
-    targetAudience: "Residents of rural and semi-urban areas across India",
+      "To find out how easily rural people can get online, what gets in the way, and how they use digital tools for school, business and government services.",
+    targetAudience: "People living in rural and semi-urban areas across India",
     privacyNote:
-      "All responses are anonymous. No personally identifiable information is collected.",
+      "Your responses are anonymous. We don't collect any personal information.",
     about: {
-      heading: "Connectivity Realities in Village Life",
+      heading: "Being Online in the Village",
       paragraphs: [
-        "While headline mobile penetration numbers suggest universal digital coverage, rural digital access remains profoundly shaped by intermittent electricity, spotty 4G cell tower signals, and shared family handsets. For rural households, being 'connected' often means waiting for morning hours when ridge signals strengthen or walking to a village center with solar backup.",
-        "This study examines how rural citizens experience government service portals, online schooling, payment systems, and vocational platforms under real-world infrastructure constraints, moving beyond download speed statistics into lived usability.",
+        "On paper, almost everyone has a mobile phone. In practice, being online can mean power cuts, patchy 4G and one phone shared by the whole family. Some people wait for the morning, when the signal is stronger. Others walk to the village centre, where there is solar backup.",
+        "This survey asks how people manage government portals, online classes, digital payments and training platforms under these conditions. We care less about internet speed and more about whether these tools actually work for people.",
       ],
       supportingImage: {
-        src: "/images/digital-market.jpg",
-        alt: "A village craftsman sitting on the ground at a weekly haat using a mobile phone beside his crafts",
-        caption: "An artisan vendor at a rural open-air haat coordinating orders via mobile phone.",
+        src: "/images/04-rural-tradesperson-mobile-phone.jpg",
+        alt: "A craftsman sitting at a weekly haat using his phone beside his crafts",
+        caption: "A craftsman at a weekly haat taking orders on his phone.",
       },
     },
     audience: {
-      heading: "Who Should Participate?",
+      heading: "Who Can Take Part",
       description:
-        "Open to all residents, students, local entrepreneurs, and educators living in rural villages, hamlets, or block headquarters.",
+        "Students, teachers, shopkeepers, farmers and anyone else living in a village, hamlet or block town.",
       targetGroups: [
-        "Rural students and educators relying on mobile devices for coursework",
-        "Village shop owners, farmers, and artisans using digital payments or advisory apps",
-        "Common Service Centre (CSC) operators and local panchayat workers",
-        "Household members who share a single smartphone across family generations",
+        "Students and teachers who use phones for classwork",
+        "Shopkeepers, farmers and artisans who use UPI or farming apps",
+        "Common Service Centre (CSC) operators and panchayat staff",
+        "Families who share one smartphone across generations",
       ],
     },
     exploration: {
-      heading: "What This Survey Explores",
+      heading: "What We're Asking About",
       intro:
-        "We focus on real constraints and grassroots adaptations across four core digital dimensions.",
+        "Four areas, all about everyday problems and how people work around them.",
       topics: [
         {
-          title: "Device Ownership & Intrafamily Sharing",
+          title: "Who Gets the Phone",
           description:
-            "Mapping how smartphones and screens are prioritized between school-age children, earning adults, and elderly dependents.",
+            "How a shared phone is divided between children, working adults and elders.",
         },
         {
-          title: "Signal Reliability & Infrastructure Gaps",
+          title: "Signal and Power",
           description:
-            "Documenting call drop rates, power outage durations, and the geographic dead zones that disrupt routine online tasks.",
+            "How often calls drop, how long power cuts last, and where there is no signal at all.",
         },
         {
-          title: "Civic Services & Welfare Navigation",
+          title: "Government Services",
           description:
-            "Investigating user hurdles with biometric authentication, ration card updates, direct benefit transfers, and portal navigation.",
+            "Trouble with biometric login, ration card updates, direct benefit transfers and government websites.",
         },
         {
-          title: "Digital Financial Literacy & Trust",
+          title: "Money and Trust Online",
           description:
-            "Measuring confidence in UPI transactions, fraud awareness, and reliance on village intermediaries for financial tasks.",
+            "How confident people feel using UPI, how aware they are of fraud, and when they turn to someone else for help.",
         },
       ],
     },
     significance: {
-      heading: "Why This Topic Matters",
+      heading: "Why It Matters",
       paragraphs: [
-        "When essential civic entitlements, bank accounts, and educational opportunities transition entirely into digital applications, connectivity becomes a fundamental determinant of social equity. Without nuanced ground evidence, policy frameworks assume frictionless access that rarely matches rural realities.",
-        "By surfacing grassroots bottlenecks, this survey helps public interest technologists and policymakers build inclusive offline-first workflows and resilient community infrastructure.",
+        "More and more benefits, bank accounts and schooling now run through apps and websites. When the connection is unreliable, people can miss out on things they are entitled to. Policies often assume smooth access that many villages simply don't have.",
+        "Hearing directly from villagers helps technologists and policymakers build tools that still work offline or on a weak signal.",
       ],
       wideImage: {
         src: "/images/digital-learning.jpg",
-        alt: "A rural classroom where a teacher guides young students learning on an educational laptop",
-        caption: "Interactive digital learning in Khairat village, illustrating community-level device adoption and student engagement.",
+        alt: "A teacher helping young students learn on a laptop in a rural classroom",
+        caption: "Students using a laptop in class in Khairat village.",
       },
     },
     closingStatement:
-      "True digital inclusion is not measured in signal bars alone, but in whether every resident can independently exercise their civic rights without friction.",
+      "Real digital inclusion isn't about signal bars. It's about whether everyone can use their rights without a struggle.",
     participation: {
       status: "ongoing",
       formUrl: "https://forms.gle/example2",
@@ -214,9 +211,9 @@ export const surveys: Survey[] = [
       ],
       estimatedMinutes: 6,
       instructions:
-        "Complete the survey online using any mobile phone or browser. It takes approximately 6 minutes.",
+        "Take the survey on any phone or browser. It takes about 6 minutes.",
       privacyNotice:
-        "All responses are anonymous. No personal numbers, IDs, or location coordinates are recorded.",
+        "Your responses are anonymous. We don't record phone numbers, IDs or locations.",
     },
     relatedSurveySlugs: [
       "youth-migration-hill-towns",
@@ -228,104 +225,104 @@ export const surveys: Survey[] = [
     id: "3",
     slug: "local-water-quality-perception",
     aliases: ["local-water-quality"],
-    title: "Local Water Quality Perception",
-    subtitle: "Community Trust, Seasonal Turbidity, and Traditional Spring Heritage Across Mountain Catchments",
-    description:
-      "How do communities perceive and respond to the quality of their daily water supply?",
+    title: "Water Quality in the Hills",
+    subtitle: "How villagers judge their drinking water",
+    description: "How communities see the quality of their drinking water.",
     category: "Public Health",
     status: "unconfirmed",
     formUrl: null,
     coverImage: "/images/survey-water.jpg",
     coverImageAlt:
-      "Natural mountain spring known as Dhara Pani gushing cleanly from bedrock in a Himalayan village",
+      "A natural spring flowing from rock in a Himalayan village",
     estimatedMinutes: 5,
     startDate: "2027-01-15",
     languages: ["English", "Hindi"],
     featured: false,
     tags: ["water", "health", "public services", "environment"],
     objective:
-      "To understand community perceptions of water quality, identify common concerns about drinking water sources, and assess awareness of water purification practices.",
+      "To learn how people judge the safety of their drinking water, what worries them, and how they make it safer to drink.",
     targetAudience:
-      "Households relying on local water sources such as springs, wells, and public taps",
+      "Households that drink water from springs, wells or public taps",
     privacyNote:
-      "All responses are anonymous. No personally identifiable information is collected.",
+      "Your responses will be anonymous. We won't collect any personal information.",
     about: {
-      heading: "The Mountain Spring Ecosystem",
+      heading: "Springs in the Mountains",
       paragraphs: [
-        "For centuries, mountain communities have relied on customary spring systems—locally known as dharas (gravity springs) and naulas (subsurface aquifer sanctuaries)—for pristine potable water. Filtered naturally through mossy limestone and oak root networks, these natural water points served as both communal lifelines and architectural heritage.",
-        "However, erratic rainfall patterns, road widening across recharge zones, and changing piped tap infrastructure have introduced uncertainty. Households frequently notice seasonal cloudiness during the monsoon, shifting mineral tastes in summer, and declining spring yields, raising urgent questions about water safety that formal testing rarely reaches in time.",
+        "For generations, mountain villages have drunk from springs: dharas that flow from the hillside, and naulas, stone-lined pools fed from underground. The water filters through moss, limestone and tree roots. These springs have long been both a lifeline and a shared heritage.",
+        "Now rainfall is less predictable, roads cut through the land that feeds the springs, and piped taps are replacing them. People notice cloudy water in the monsoon, a different taste in summer and weaker flow. They want to know if the water is safe, and lab tests rarely reach them in time.",
       ],
       supportingImage: {
         src: "/images/water-naula.jpg",
-        alt: "Traditional stone masonry spring sanctuary in a Himalayan mountain village providing community drinking water",
-        caption: "Sankot Naini traditional spring sanctuary, where ancient stone masonry protects aquifer water for the surrounding hamlet.",
+        alt: "A traditional stone spring providing drinking water to a Himalayan village",
+        caption: "A traditional stone spring at Sankot Naini that supplies a nearby hamlet.",
       },
     },
     audience: {
-      heading: "Who Should Participate?",
+      heading: "Who Can Take Part",
       description:
-        "Intended for rural and semi-urban households across hill belts who draw daily drinking water from gravity springs, piped panchayat taps, or community storage tanks.",
+        "Households in hill areas that get their daily drinking water from springs, panchayat taps or community tanks.",
       targetGroups: [
-        "Primary water gatherers and domestic water managers in village homes",
-        "Village water and sanitation committee members (VWSC) and panchayat leaders",
-        "Residents noticing seasonal shifts in spring taste, color, or flow duration",
-        "Public health field workers and rural healthcare practitioners",
+        "People who fetch and manage water at home",
+        "Members of village water and sanitation committees, and panchayat leaders",
+        "Residents who have noticed changes in the taste, colour or flow of their water",
+        "Health workers in rural areas",
       ],
     },
     exploration: {
-      heading: "What This Survey Explores",
+      heading: "What We're Asking About",
       intro:
-        "A multi-faceted inquiry into sensory perception, traditional knowledge, and infrastructure reliability.",
+        "Four questions about how people judge their water and what they do about it.",
       topics: [
         {
-          title: "Sensory Quality Assessment",
+          title: "How Water Looks and Tastes",
           description:
-            "Investigating how households judge safety through visual clarity, seasonal taste changes, odor, and cookware sediment residue.",
+            "How people decide water is safe from its clarity, taste, smell and any residue left in their pots.",
         },
         {
-          title: "Spring Source Health & Depletion",
+          title: "Are the Springs Drying Up?",
           description:
-            "Documenting dry-season discharge reduction in historical naulas and dharas alongside land use disturbances in recharge zones.",
+            "Whether old naulas and dharas give less water in the dry season, and what has changed on the land around them.",
         },
         {
-          title: "Household Storage & Domestic Treatment",
+          title: "Storing and Treating Water at Home",
           description:
-            "Mapping customary practices including boiled cooling, cloth filtering, traditional copper vessel storage, and modern filter adoption.",
+            "How families make water safe to drink, from boiling and cloth filtering to copper vessels and modern filters.",
         },
         {
-          title: "Piped Supply vs Natural Heritage",
+          title: "Taps or Springs?",
           description:
-            "Comparing community confidence in newly introduced piped tap schemes against heritage spring water sources.",
+            "Whether people trust new piped water as much as their traditional springs.",
         },
       ],
     },
     significance: {
-      heading: "Why This Topic Matters",
+      heading: "Why It Matters",
       paragraphs: [
-        "Perception of water quality directly governs whether community members choose to consume treated municipal supplies or trek uphill to unfiltered ancestral springs. In many mountain pockets, perceived purity does not always align with microbiological safety during heavy monsoon downpours.",
-        "Capturing community attitudes and customary testing heuristics is essential for designing participatory water testing programs that empower residents without dismissing ancestral ecological knowledge.",
+        "How people judge their water decides what they drink: treated supply, or spring water at the end of a long walk. Clear water isn't always safe, especially after heavy monsoon rain.",
+        "Understanding what people already know and do helps build community water-testing programmes that respect traditional knowledge instead of dismissing it.",
       ],
       wideImage: {
         src: "/images/water-stream.jpg",
-        alt: "Pristine mountain stream bubbling over clean river stones with wild maidenhair ferns draped above in Uttarakhand",
-        caption: "A pristine high-altitude mountain stream in Uttarakhand, reflecting natural riparian health and seasonal flow.",
+        alt: "A clear mountain stream running over smooth stones with ferns above it in Uttarakhand",
+        caption: "A mountain stream in Uttarakhand.",
       },
     },
     closingStatement:
-      "Safe drinking water is rooted not merely in chemical metrics, but in the enduring relationship between mountain hamlets and their living springs.",
+      "Safe water is about more than test results. It is also about the bond between hill villages and their springs.",
     participation: {
       status: "unconfirmed",
       formUrl: null,
       estimatedMinutes: 5,
-      instructions: "Questionnaire access is currently pending protocol confirmation.",
+      instructions:
+        "This survey isn't open yet. We're waiting for the final protocol to be confirmed.",
       unavailableReason:
-        "Questionnaire protocol and institutional review board approval are currently in preparation. Form submission will activate once the survey protocol is certified.",
+        "The questionnaire and its ethics approval are still being prepared. The form will open once approval is in place.",
       privacyNotice:
-        "Participation will be completely anonymous when activated. No individual identifiers or geolocation markers will be retained.",
+        "When the survey opens, responses will be anonymous. We won't keep names or location data.",
     },
     relatedSurveySlugs: [
       "preserving-traditional-ecological-knowledge",
-      "wild-animal-human-conflict-hilly-regions",
+      "wild-life-impact-hilly-regions",
       "public-transport-hill-regions",
     ],
   },
@@ -333,10 +330,9 @@ export const surveys: Survey[] = [
     id: "4",
     slug: "community-market-dynamics",
     aliases: [],
-    title: "Community Market Dynamics",
-    subtitle: "Weekly Haats, Agrarian Exchange, and the Social Architecture of Rural Town Bazaars",
-    description:
-      "A study of how local weekly markets function as social and economic lifelines in small towns.",
+    title: "Weekly Markets",
+    subtitle: "How village haats keep small towns running",
+    description: "How weekly markets support small-town life and livelihoods.",
     category: "Economics & Livelihoods",
     status: "completed",
     formUrl: "https://forms.gle/example4",
@@ -345,7 +341,7 @@ export const surveys: Survey[] = [
     ],
     coverImage: "/images/survey-market.jpg",
     coverImageAlt:
-      "Senior produce vendor carefully arranging fresh vegetables and produce in an outdoor market stall",
+      "An older vendor arranging vegetables at an outdoor market stall",
     estimatedMinutes: 10,
     startDate: "2026-03-01",
     endDate: "2026-06-30",
@@ -353,75 +349,74 @@ export const surveys: Survey[] = [
     featured: true,
     tags: ["markets", "economy", "community", "livelihoods"],
     objective:
-      "To document the economic and social functions of periodic rural markets and understand their role in local supply chains.",
+      "To record the economic and social role of weekly rural markets and how they fit into local supply chains.",
     targetAudience:
-      "Vendors, buyers, and community members who regularly attend local weekly or bi-weekly markets",
+      "Sellers, buyers and others who regularly visit weekly or fortnightly markets",
     privacyNote:
-      "All responses are anonymous. No personally identifiable information is collected.",
+      "All responses are anonymous. No personal information was collected.",
     about: {
-      heading: "The Rhythm of Periodic Markets",
+      heading: "More Than a Place to Shop",
       paragraphs: [
-        "In small towns and rural intersections, the weekly haat or bazaar is far more than a commercial node. It functions as an indispensable civic commons where smallholder farmers bypass middleman cartels, artisans barter handwoven baskets and iron tools, and distant relatives converge to exchange regional news.",
-        "Field documentation conducted between March and June 2026 mapped footfall patterns, seasonal price fluctuations, and credit relationships among informal micro-vendors. The study revealed how these historic market dynamics provide crucial economic resilience against external supply chain disruptions.",
+        "In small towns, the weekly haat is about much more than buying and selling. Farmers sell directly instead of going through middlemen, artisans trade baskets and iron tools, and relatives meet and catch up on news.",
+        "Between March and June 2026, we looked at how many people come, how prices change through the seasons, and how small vendors give and take credit. Markets like these help local people cope when supply chains break down.",
       ],
       supportingImage: {
         src: "/images/market-vendor.jpg",
-        alt: "Elderly woman street vendor seated on pavement selling freshly harvested produce from woven baskets",
-        caption: "A grower-vendor offering seasonal field harvest in traditional shallow woven baskets at a periodic market.",
+        alt: "An elderly woman selling fresh produce from woven baskets on the pavement",
+        caption: "A grower selling seasonal produce from shallow woven baskets.",
       },
     },
     audience: {
-      heading: "Participant Representation",
+      heading: "Who Took Part",
       description:
-        "This study captured empirical responses from regular participants across three representative weekly market nodes.",
+        "People who regularly visit three weekly markets shared their experiences.",
       targetGroups: [
-        "Smallholder farmers marketing surplus vegetable, grain, and fruit crops",
-        "Itinerant retail traders dealing in dry spices, textiles, and household hardware",
-        "Local artisans and blacksmiths repairing farm implements and selling woodwork",
-        "Regular household shoppers balancing weekly domestic food budgets",
+        "Small farmers selling extra vegetables, grain and fruit",
+        "Travelling traders selling spices, cloth and household goods",
+        "Artisans and blacksmiths who repair tools and sell woodwork",
+        "Local shoppers managing a weekly food budget",
       ],
     },
     exploration: {
-      heading: "What This Survey Explored",
-      intro:
-        "The research investigated four central axes of informal town commerce.",
+      heading: "What We Looked At",
+      intro: "The study covered four parts of market life.",
       topics: [
         {
-          title: "Vendor Supply Lines & Intermediation",
+          title: "Getting Goods to Market",
           description:
-            "Mapping transport logistics, head-load hauling distances, and direct farmer-to-consumer price margins versus mandi middlemen.",
+            "How sellers transport their goods, how far they carry them, and how their prices compare with what middlemen at the mandi pay.",
         },
         {
-          title: "Informal Credit & Trust Networks",
+          title: "Credit and Trust",
           description:
-            "Examining traditional khata ledger credit, deferred harvest payments, and mutual aid pacts among neighboring stallholders.",
+            "How khata credit, delayed payment after harvest and mutual help between neighbouring stallholders work.",
         },
         {
-          title: "Physical Infrastructure & Municipal Amenities",
+          title: "Facilities",
           description:
-            "Assessing vendor access to clean drinking water, shade awnings, waste disposal, and secure storage overnight.",
+            "Whether vendors have clean drinking water, shade, waste disposal and safe overnight storage.",
         },
         {
-          title: "Civic & Interpersonal Exchange",
+          title: "A Place to Meet",
           description:
-            "Evaluating the market's irreplaceable role as a cultural meeting square for matrimonial news, labor hiring, and community updates.",
+            "How the market works as a meeting place for news, hiring and family matters, including talk of marriages.",
         },
       ],
     },
     significance: {
-      heading: "Why This Study Matters",
+      heading: "Why It Matters",
       paragraphs: [
-        "Modern retail consolidation and digital delivery models frequently misdiagnose weekly rural markets as archaic remnants slated for obsolescence. In reality, periodic markets operate as sophisticated, climate-adaptive micro-economies that circulate currency directly within the local watershed.",
-        "The collected data provides concrete evidence for local urban planning bodies to safeguard historic market grounds, invest in civic vendor sanitation, and resist punitive anti-vending regulations.",
+        "Big retail chains and delivery apps often treat weekly markets as old-fashioned and on their way out. In fact, they keep money circulating inside the local area and adapt well to changing seasons.",
+        "The findings give town planners evidence to protect market grounds, improve sanitation for vendors, and think twice before bringing in rules that push vendors out.",
       ],
       wideImage: {
         src: "/images/market-stall.jpg",
-        alt: "Colorful variety of fresh regional vegetables arranged closely at an outdoor farm market stall",
-        caption: "Bountiful farm-to-table display illustrating the high turnover of perishable seasonal crops in local bazaars.",
+        alt: "A market stall piled with fresh, colourful vegetables",
+        caption: "A busy stall of fresh seasonal vegetables.",
       },
     },
     closingStatement:
-      "The weekly market is the beating heart of local resilience—a living space where economic survival and community fellowship remain one.",
+      "The weekly market is the heart of a small town: a place where earning a living and meeting neighbours go hand in hand.",
     participation: {
       status: "completed",
       formUrl: "https://forms.gle/example4",
@@ -429,11 +424,11 @@ export const surveys: Survey[] = [
         { language: "English", url: "https://forms.gle/example4" },
       ],
       estimatedMinutes: 10,
-      instructions: "Data collection for this study is now concluded.",
+      instructions: "Data collection for this study has ended.",
       unavailableReason:
-        "Field data collection for this survey concluded on June 30, 2026. Data synthesis and monograph publishing are currently in progress.",
+        "We finished collecting data on 30 June 2026. We are now analysing the results and preparing a report.",
       privacyNotice:
-        "All collected data remains confidential and anonymized in accordance with research ethics protocols.",
+        "All data is kept confidential and anonymised, following research ethics guidelines.",
     },
     relatedSurveySlugs: [
       "digital-access-rural-communities",
@@ -445,10 +440,9 @@ export const surveys: Survey[] = [
     id: "5",
     slug: "youth-migration-hill-towns",
     aliases: ["youth-migration-patterns"],
-    title: "Youth Migration from Hill Towns",
-    subtitle: "Aspirations, Educational Transit, and the Changing Social Fabric of Mountain Youth",
-    description:
-      "Why are young people leaving hill towns, and what would make them stay?",
+    title: "Why Youth Leave the Hills",
+    subtitle: "Studies, jobs and the pull of home",
+    description: "Why young people leave hill towns, and what could make them stay.",
     category: "Demographics & Migration",
     status: "ongoing",
     formUrl: "https://forms.gle/example5",
@@ -457,7 +451,7 @@ export const surveys: Survey[] = [
     ],
     coverImage: "/images/survey-migration.jpg",
     coverImageAlt:
-      "A young man sitting contemplatively on a roadside bench at a mountain bus stop overlooking a panoramic valley in Shimla",
+      "A young man sitting on a bench at a bus stop above a valley in Shimla",
     estimatedMinutes: 7,
     startDate: "2026-08-01",
     endDate: "2027-02-28",
@@ -465,75 +459,75 @@ export const surveys: Survey[] = [
     featured: false,
     tags: ["migration", "youth", "employment", "hill towns"],
     objective:
-      "To understand the factors driving youth migration from hill towns, including education, employment, and quality of life considerations.",
+      "To understand why young people leave hill towns, looking at education, jobs and quality of life.",
     targetAudience:
-      "Young adults aged 18–35 who have either migrated from or currently live in hill towns",
+      "Young adults aged 18–35 who have left a hill town or still live in one",
     privacyNote:
-      "All responses are anonymous. No personally identifiable information is collected.",
+      "Your responses are anonymous. We don't collect any personal information.",
     about: {
-      heading: "Between Heritage and Opportunity",
+      heading: "Between Home and Opportunity",
       paragraphs: [
-        "Across mountain valleys, smaller hill towns are experiencing unprecedented demographic shifts. While older generations maintain ancestral stone homes and terraced agriculture, young people face a persistent mismatch between local livelihoods and contemporary aspirations. Limited collegiate degree options, scarce professional white-collar positions, and high living costs in regional hubs push thousands toward lowland metropolitan centers each year.",
-        "Yet out-migration is rarely an effortless choice. It entails navigating emotional separation from family networks, high urban rental precarity, and deep nostalgia for clean mountain environments. This survey investigates what drives the departure decision, what ties migrants back to their hometowns, and what structural changes could enable youth to build viable careers in the hills.",
+        "Many hill towns are changing fast. Parents and grandparents stay on in stone houses and terraced fields, while young people find few college options, few office jobs and high costs in the regional cities. Every year, many head to cities in the plains.",
+        "Leaving is rarely easy. It means missing family, paying high rents in the city and longing for clean mountain air. This survey asks what makes people leave, what keeps them connected to home, and what would make it possible to build a career in the hills.",
       ],
       supportingImage: {
         src: "/images/migration-students.jpg",
-        alt: "College students in casual attire queuing to board a mountain transit bus in Srinagar Garhwal",
-        caption: "University students boarding regional transit buses in Garhwal, exemplifying the daily commute for higher education.",
+        alt: "College students lining up to board a bus in Srinagar Garhwal",
+        caption: "Students boarding a bus in Garhwal for their daily trip to college.",
       },
     },
     audience: {
-      heading: "Who Should Participate?",
+      heading: "Who Can Take Part",
       description:
-        "We encourage participation from young people aged 18 to 35 from mountainous and sub-Himalayan regions, whether currently residing in their home districts or living in distant cities.",
+        "Young people aged 18 to 35 from the mountains and foothills, whether they still live there or have moved away.",
       targetGroups: [
-        "Higher secondary and college students assessing future relocation options",
-        "Recent graduates and early-career professionals who have migrated to plains cities",
-        "Young entrepreneurs, teachers, and digital workers who have chosen to stay or return to hill towns",
-        "Family members and community mentors observing youth out-migration trends",
+        "School and college students thinking about moving away",
+        "Graduates and young professionals who now live in cities in the plains",
+        "Young entrepreneurs, teachers and remote workers who stayed or moved back",
+        "Family members and mentors who have watched young people leave",
       ],
     },
     exploration: {
-      heading: "What This Survey Explores",
+      heading: "What We're Asking About",
       intro:
-        "We explore personal aspirations, educational pathways, and return incentives across four themes.",
+        "Four themes: what people want, how they study, and what could bring them back.",
       topics: [
         {
-          title: "Higher Education & Specialized Training",
+          title: "Education and Training",
           description:
-            "Assessing local availability of vocational polytechnics, university degrees, and competitive exam coaching in hill districts.",
+            "What is available locally: polytechnics, degrees and coaching for competitive exams.",
         },
         {
-          title: "Employment Horizons & Local Enterprise",
+          title: "Jobs and Local Business",
           description:
-            "Analyzing the viability of mountain-based entrepreneurship, eco-tourism, organic agriculture, and remote tech work.",
+            "How realistic it is to make a living in the hills through small business, tourism, organic farming or remote work.",
         },
         {
-          title: "Urban Plains Reality vs Mountain Quality of Life",
+          title: "City Life vs Mountain Life",
           description:
-            "Comparing metropolitan income potential against urban pollution, high rents, mental isolation, and lack of community.",
+            "How city salaries compare with pollution, high rents, loneliness and missing community.",
         },
         {
-          title: "Return Migration Catalysts",
+          title: "What Could Bring People Back",
           description:
-            "Identifying which specific amenities—reliable fiber broadband, healthcare specialty centers, or credit access—would encourage youth to resettle.",
+            "Which things would make young people return, such as fast broadband, specialist healthcare or easier credit.",
         },
       ],
     },
     significance: {
-      heading: "Why This Topic Matters",
+      heading: "Why It Matters",
       paragraphs: [
-        "Persistent youth out-migration leaves mountain villages populated predominantly by aging elders, accelerating the abandonment of terraced fields and weakening customary community institutions. When an entire generation relocates, the living transmission of language, oral lore, and ecological stewardship faces profound interruption.",
-        "Gaining granular insights directly from young respondents enables regional development agencies to craft grounded youth policies, vocational funding, and digital infrastructure that foster mountain economies rather than deplete them.",
+        "When young people leave, villages are left mostly with older people. Terraced fields go unused and village traditions weaken. Language, stories and knowledge of the land stop being passed on.",
+        "Hearing from young people themselves helps agencies plan practical youth policies, training funds and digital infrastructure that build mountain economies instead of draining them.",
       ],
       wideImage: {
         src: "/images/migration-almora-ridge.jpg",
-        alt: "Panoramic high-angle view of the historic hill town of Almora sprawling across a high Himalayan ridge against rolling mountain ranges",
-        caption: "Ridge-top settlement of Almora in Uttarakhand, showing the compact mountain geography where youth weigh local opportunities against outward mobility.",
+        alt: "The hill town of Almora spread along a high ridge with mountains behind it",
+        caption: "Almora on its ridge in Uttarakhand, where young people weigh staying against leaving.",
       },
     },
     closingStatement:
-      "Mountain towns will thrive when their young people can choose to stay not out of constraint, but because opportunity and belonging flourish side by side.",
+      "Hill towns will do well when young people stay because they want to, not because they have no choice.",
     participation: {
       status: "ongoing",
       formUrl: "https://forms.gle/example5",
@@ -542,117 +536,116 @@ export const surveys: Survey[] = [
       ],
       estimatedMinutes: 7,
       instructions:
-        "The survey is open to young adults aged 18–35. It takes roughly 7 minutes to complete on mobile or desktop.",
+        "The survey is for people aged 18–35. It takes about 7 minutes on a phone or computer.",
       privacyNotice:
-        "All responses are anonymous. No personal names, telephone numbers, or employment records are collected.",
+        "Your responses are anonymous. We don't collect names, phone numbers or job records.",
     },
     relatedSurveySlugs: [
       "digital-access-rural-communities",
       "public-transport-hill-regions",
-      "wild-animal-human-conflict-hilly-regions",
+      "wild-life-impact-hilly-regions",
     ],
   },
   {
     id: "6",
     slug: "preserving-traditional-ecological-knowledge",
     aliases: ["traditional-knowledge-preservation"],
-    title: "Preserving Traditional Ecological Knowledge",
-    subtitle: "Indigenous Ethnobotany, Terraced Water Canals, and Intergenerational Memory Across the Himalaya",
-    description:
-      "Documenting how traditional environmental knowledge is passed across generations in mountain communities.",
+    title: "Traditional Mountain Knowledge",
+    subtitle: "Seeds, herbs, water channels and what elders know",
+    description: "Recording how mountain communities pass down their knowledge of nature.",
     category: "Culture & Heritage",
     status: "unconfirmed",
     formUrl: null,
     coverImage: "/images/survey-tradition.jpg",
     coverImageAlt:
-      "In-situ botanical observation of flowering Brahmakamal (Saussurea obvallata), a sacred medicinal herb at 13,000 feet in Chamoli",
+      "Brahmakamal, a sacred medicinal flower, blooming at 13,000 feet in Chamoli",
     estimatedMinutes: 12,
     startDate: "2027-03-01",
     languages: ["English", "Hindi"],
     featured: false,
     tags: ["traditional knowledge", "ecology", "culture", "heritage"],
     objective:
-      "To identify and document forms of traditional ecological knowledge in mountain communities and understand how this knowledge is being transmitted, preserved, or lost.",
+      "To record the traditional knowledge about nature that mountain communities hold, and to see how it is being passed on, kept or lost.",
     targetAudience:
-      "Community elders, farmers, and cultural practitioners in mountainous regions",
+      "Elders, farmers and cultural practitioners in mountain areas",
     privacyNote:
-      "All responses are anonymous. No personally identifiable information is collected.",
+      "Your responses will be anonymous. We won't collect any personal information.",
     about: {
-      heading: "Centuries of Mountain Agronomy",
+      heading: "Knowledge Handed Down for Centuries",
       paragraphs: [
-        "Over millennia, indigenous Himalayan communities developed deeply intricate ecological systems attuned to fragile mountain ecosystems. From weather prediction based on bird flight patterns and high-altitude medicinal plant harvesting to gravity-fed gool irrigation canals carved into bedrock, this accumulated wisdom represents sustainable survival engineering.",
-        "With rapid cultural standardization, formal school curricula that exclude indigenous flora, and demographic migration, this oral treasury is increasingly concentrated among village elders. This survey seeks to document which facets of ecological knowledge remain active in daily practice, which are at risk of erasure, and how communities wish to preserve their legacy.",
+        "Himalayan communities have spent generations learning to live with fragile mountain land. They read the weather from the flight of birds, gather medicinal plants at high altitude, and cut gool channels into the rock to carry water to their fields.",
+        "Today, schools rarely teach local plants and many young people are moving away, so much of this knowledge now rests with village elders. This survey asks which parts are still used every day, which are at risk of being lost, and how communities would like to protect them.",
       ],
       supportingImage: {
         src: "/images/tradition-terrace.jpg",
-        alt: "Historic stone-walled terraced agricultural fields stepped across Himalayan slopes with traditional gravity irrigation canals in Uttarakhand",
-        caption: "Stepped terrace architecture in Uttarakhand, engineered with dry-stone gravity canals that conserve moisture and prevent mountain erosion.",
+        alt: "Stone-walled terraced fields with traditional water channels on a Himalayan slope in Uttarakhand",
+        caption: "Dry-stone terraces and gravity-fed channels in Uttarakhand that hold moisture and stop soil from washing away.",
       },
     },
     audience: {
-      heading: "Who Should Participate?",
+      heading: "Who Can Take Part",
       description:
-        "Intended for indigenous mountain farmers, pastoralists, herbal healers (vaidyas), community elders, and cultural documentarians.",
+        "For mountain farmers, herders, herbal healers (vaidyas), elders and anyone documenting local culture.",
       targetGroups: [
-        "Practicing farmers maintaining heirloom crop varieties (millets, amaranth, pulses)",
-        "Traditional herbal practitioners and wild plant foragers",
-        "Elder community members holding oral agricultural calendars and folklore",
-        "Youth and educators interested in biocultural conservation",
+        "Farmers who still grow traditional varieties of millet, amaranth and pulses",
+        "Herbal healers and people who forage for wild plants",
+        "Elders who remember farming calendars and folk stories",
+        "Young people and teachers interested in local heritage",
       ],
     },
     exploration: {
-      heading: "What This Survey Explores",
-      intro:
-        "Investigating four central dimensions of biocultural inheritance.",
+      heading: "What We're Asking About",
+      intro: "Four areas of knowledge handed down in mountain communities.",
       topics: [
         {
-          title: "Heirloom Seed Saving & Crop Diversity",
+          title: "Saving Seeds",
           description:
-            "Documenting seed saving vessels, bartering rituals, and native resistance of indigenous crops to drought and pests.",
+            "How seeds are stored and swapped, and how well traditional crops handle drought and pests.",
         },
         {
-          title: "Ethnobotany & High-Altitude Medicinal Plants",
+          title: "Wild Plants and Herbs",
           description:
-            "Mapping customary knowledge of wild edible greens, roots, and therapeutic herbs like Brahmakamal and Kutki.",
+            "What people know about wild greens, roots and medicinal herbs such as Brahmakamal and Kutki.",
         },
         {
-          title: "Indigenous Water Engineering & Canals",
+          title: "Water Channels",
           description:
-            "Recording the maintenance protocols of community gools (channels), naulas, and stone rainwater catchment ponds.",
+            "How communities look after gools, naulas and stone rainwater ponds.",
         },
         {
-          title: "Intergenerational Transmission Mechanisms",
+          title: "Passing It On",
           description:
-            "Evaluating the transition from oral village storytelling to formal documentation and youth apprenticeships.",
+            "How knowledge moves from village storytelling into writing, and from elders to young apprentices.",
         },
       ],
     },
     significance: {
-      heading: "Why This Topic Matters",
+      heading: "Why It Matters",
       paragraphs: [
-        "As climate volatility disrupts regular mountain weather patterns, traditional ecological knowledge offers invaluable blueprints for climate adaptation. Indigenous millet polycultures, for example, thrive in conditions where monoculture hybrid grains fail completely.",
-        "Preserving this knowledge is not a backward-looking exercise in nostalgia, but an imperative for ecological survival, community autonomy, and biodiversity conservation in fragile mountain biomes.",
+        "As the climate becomes less predictable, traditional knowledge offers practical lessons. Local mixed millet crops, for example, can survive conditions where hybrid grains fail.",
+        "Protecting this knowledge isn't nostalgia. It helps communities adapt, stay self-reliant and protect the variety of life in the mountains.",
       ],
       wideImage: {
         src: "/images/tradition-seed-storage.jpg",
-        alt: "Artisan weaving indigenous bamboo Duli granary baskets engineered specifically for aerated seed preservation",
-        caption: "A master craftsman weaving a traditional bamboo Duli basket engineered for natural aeration and long-term seed storage.",
+        alt: "A craftsman weaving a bamboo Duli basket used to store seeds",
+        caption: "A craftsman weaving a bamboo Duli basket, built to let air through and keep seeds safe.",
       },
     },
     closingStatement:
-      "Traditional ecological knowledge is not an artifact of the past, but a living compass guiding sustainable coexistence with the mountain earth.",
+      "Traditional knowledge isn't just history. It is still a guide to living well with the mountains.",
     participation: {
       status: "unconfirmed",
       formUrl: null,
       estimatedMinutes: 12,
-      instructions: "Questionnaire access is currently pending protocol confirmation.",
+      instructions:
+        "This survey isn't open yet. We're waiting for the final protocol to be confirmed.",
       unavailableReason:
-        "Field research protocol and community consent frameworks are currently being finalized with local institutions. The inquiry will open upon protocol approval.",
+        "We are still agreeing the research plan and consent process with local institutions. The survey will open once they are approved.",
       privacyNotice:
-        "When launched, all cultural knowledge shared will be attributed ethically according to community biocultural protocols, with option for full anonymity.",
+        "When the survey opens, shared knowledge will be credited following community protocols, and you can choose to stay anonymous.",
     },
     relatedSurveySlugs: [
-      "wild-animal-human-conflict-hilly-regions",
+      "wild-life-impact-hilly-regions",
       "local-water-quality-perception",
       "community-market-dynamics",
     ],
@@ -661,10 +654,9 @@ export const surveys: Survey[] = [
     id: "7",
     slug: "public-transport-hill-regions",
     aliases: [],
-    title: "Public Transport in Hill Regions",
-    subtitle: "Lifeline Mountain Routes, Fleet Reliability, and Commuter Realities Across Precarious Terrain",
-    description:
-      "Assessing the reliability, accessibility, and impact of public transport services in mountainous areas.",
+    title: "Hill Bus Services",
+    subtitle: "Mountain routes, delays and daily commutes",
+    description: "How reliable and accessible public transport is in the hills.",
     category: "Infrastructure",
     status: "completed",
     formUrl: "https://forms.gle/example7",
@@ -673,7 +665,7 @@ export const surveys: Survey[] = [
     ],
     coverImage: "/images/survey-transport.jpg",
     coverImageAlt:
-      "State transport bus navigating sheer rock-carved cliff overhangs at Taranda Dhank in Kinnaur",
+      "A state bus passing under a rock overhang at Taranda Dhank in Kinnaur",
     estimatedMinutes: 6,
     startDate: "2026-01-15",
     endDate: "2026-05-15",
@@ -681,75 +673,74 @@ export const surveys: Survey[] = [
     featured: false,
     tags: ["transport", "infrastructure", "accessibility", "hills"],
     objective:
-      "To assess commuter satisfaction with public transport services and identify critical gaps in connectivity for hill region communities.",
+      "To find out how satisfied commuters are with public transport in the hills and where the gaps in connections are.",
     targetAudience:
-      "Regular users of public transport services in hilly and mountainous areas",
+      "People who regularly use public transport in hill areas",
     privacyNote:
-      "All responses are anonymous. No personally identifiable information is collected.",
+      "All responses are anonymous. No personal information was collected.",
     about: {
-      heading: "The Mountain Transit Lifeline",
+      heading: "The Bus as a Lifeline",
       paragraphs: [
-        "In rugged mountain districts, state-run public transport buses and shared utility jeeps are not just transit conveniences—they are the literal lifelines of civic society. Every day, early morning services transport schoolchildren across distant valleys, take sick patients to subdivisional hospitals, and ferry farmers with crates of produce down to wholesale markets.",
-        "Conducted from January to May 2026, this study surveyed daily commuters across high-altitude roads to document route frequencies, winter disruption coping strategies, passenger overcrowding, and pedestrian walking distances to the nearest road-head.",
+        "In the mountains, buses and shared jeeps are essential. Early services take children to school across the valley, patients to the hospital, and farmers with their produce to market.",
+        "From January to May 2026, we asked daily commuters on high mountain roads how often buses run, how they cope with winter disruptions, how crowded the buses get, and how far they walk to reach the nearest road.",
       ],
       supportingImage: {
         src: "/images/transport-bus-stop.jpg",
-        alt: "Local boy waiting at roadside bus stand overlooking deep Himalayan valleys in Shimla",
-        caption: "A commuter waiting at a roadside shelter in Shimla, highlighting the quiet patience demanded by mountain schedules.",
+        alt: "A boy waiting at a roadside bus stop above a deep valley in Shimla",
+        caption: "A boy waiting at a roadside bus stop above a deep valley in Shimla.",
       },
     },
     audience: {
-      heading: "Participant Cohort",
+      heading: "Who Took Part",
       description:
-        "This empirical study synthesized input from regular mountain commuters across both primary highways and remote link roads.",
+        "Regular commuters on main highways and remote link roads shared their experience.",
       targetGroups: [
-        "Daily school, college, and university commuters traversing inter-valley routes",
-        "Patients and caregivers traveling to district hospitals for healthcare",
-        "Agrarian producers transporting fresh produce, milk cans, and goods to town markets",
-        "Women commuters evaluating safety, schedule predictability, and last-mile connectivity",
+        "School and college students who travel between valleys every day",
+        "Patients and carers travelling to district hospitals",
+        "Farmers taking produce, milk and goods to town markets",
+        "Women commuters, who spoke about safety, reliable timings and getting home from the bus stop",
       ],
     },
     exploration: {
-      heading: "What This Survey Explored",
-      intro:
-        "Examining four critical operational dimensions of high-terrain transit.",
+      heading: "What We Looked At",
+      intro: "The study covered four parts of travelling in the hills.",
       topics: [
         {
-          title: "Schedule Adherence & Winter Road Blocks",
+          title: "Delays and Winter Closures",
           description:
-            "Assessing delays caused by monsoonal landslides, snowfall, narrow single-lane bottlenecks, and fleet maintenance breakdowns.",
+            "Delays caused by landslides, snow, narrow single-lane roads and bus breakdowns.",
         },
         {
-          title: "Last-Mile Pedestrian Access",
+          title: "The Walk to the Road",
           description:
-            "Documenting the steep walking hours required to reach the nearest motorable bus stop from off-road ridge villages.",
+            "How long people walk uphill to reach the nearest bus stop from remote villages.",
         },
         {
-          title: "Passenger Safety & Vehicle Roadworthiness",
+          title: "Safety",
           description:
-            "Measuring commuter confidence in vehicle braking systems, driver mountain skills, and roadside guardrails along precipitous gorges.",
+            "How safe people feel about vehicle brakes, driver skill and guardrails beside steep gorges.",
         },
         {
-          title: "Affordability & Concession Fares",
+          title: "Fares and Concessions",
           description:
-            "Evaluating the financial impact of transit fares on low-income rural households and student passes.",
+            "How fares affect low-income families, and how much student passes help.",
         },
       ],
     },
     significance: {
-      heading: "Why This Study Matters",
+      heading: "Why It Matters",
       paragraphs: [
-        "Public transport deficits in hill regions disproportionately disadvantage women, the elderly, and schoolchildren who cannot afford private vehicles or commercial taxi fares. When a single afternoon bus route is canceled, entire villages can be isolated from medical emergency care and scholastic exams.",
-        "The findings from this survey provide quantitative evidence for state transport corporations to optimize fleet allocations, repair dangerous road-edge shoulders, and prioritize underserved branch routes.",
+        "When bus services fall short, women, older people and children suffer most, since they can't afford private cars or taxis. If one afternoon bus is cancelled, a village can be cut off from emergency care and exams.",
+        "The findings give state transport corporations evidence to use their buses better, repair dangerous road edges and prioritise remote branch routes.",
       ],
       wideImage: {
         src: "/images/transport-ridge-bus.jpg",
-        alt: "State transport bus negotiating rugged unpaved mountain route towards high-altitude destination at Parashar",
-        caption: "Public bus navigating the high-altitude Parashar ridge route, exemplifying the demanding conditions facing mountain fleets.",
+        alt: "A state bus on a rough mountain road heading toward Parashar",
+        caption: "A bus climbing the Parashar ridge road.",
       },
     },
     closingStatement:
-      "Mobility in the mountains is a fundamental civic right—reliable public transport connects isolated ridges to the opportunities of the world.",
+      "In the mountains, reliable transport is a basic right. It links remote ridges to the rest of the world.",
     participation: {
       status: "completed",
       formUrl: "https://forms.gle/example7",
@@ -757,11 +748,11 @@ export const surveys: Survey[] = [
         { language: "English", url: "https://forms.gle/example7" },
       ],
       estimatedMinutes: 6,
-      instructions: "Data collection for this survey is now concluded.",
+      instructions: "Data collection for this survey has ended.",
       unavailableReason:
-        "Data collection for this survey completed on May 15, 2026. Analysis has concluded and the policy brief is being prepared for regional transit planners.",
+        "We finished collecting data on 15 May 2026. The analysis is done, and we are writing a policy brief for regional transport planners.",
       privacyNotice:
-        "All participant data was anonymized upon collection in accordance with institutional guidelines.",
+        "All participant data was anonymised when collected, in line with institutional guidelines.",
     },
     relatedSurveySlugs: [
       "youth-migration-hill-towns",
@@ -773,99 +764,99 @@ export const surveys: Survey[] = [
     id: "8",
     slug: "mental-health-awareness-rural-areas",
     aliases: ["mental-health-awareness-rural"],
-    title: "Mental Health Awareness in Rural Areas",
-    subtitle: "Community Empathy, Destigmatizing Distress, and Informal Support Networks in Village Settings",
-    description:
-      "Understanding mental health perceptions, stigma, and access to support in rural communities.",
+    title: "Mental Health in Villages",
+    subtitle: "Talking about stress, stigma and support",
+    description: "How rural people see mental health and where they find support.",
     category: "Public Health",
     status: "unconfirmed",
     formUrl: null,
     coverImage: "/images/survey-health.jpg",
     coverImageAlt:
-      "A person walking along a gentle dirt lane winding through green open fields in soft morning light",
+      "A person walking along a dirt lane through green fields in morning light",
     estimatedMinutes: 8,
     startDate: "2027-04-01",
     languages: ["English", "Hindi"],
     featured: false,
     tags: ["mental health", "stigma", "rural", "healthcare"],
     objective:
-      "To gauge awareness and attitudes toward mental health in rural communities, identify barriers to seeking help, and understand existing support networks.",
-    targetAudience: "Adults living in rural communities across India",
+      "To understand how rural communities think about mental health, what stops people from asking for help, and what support already exists.",
+    targetAudience: "Adults living in rural areas across India",
     privacyNote:
-      "All responses are anonymous. No personally identifiable information is collected.",
+      "Your responses will be anonymous. We won't collect any personal information.",
     about: {
-      heading: "Emotional Wellbeing in Village Life",
+      heading: "Wellbeing in Village Life",
       paragraphs: [
-        "In rural and agrarian environments, mental distress is frequently experienced in silence or interpreted through purely somatic complaints such as persistent exhaustion, headaches, or sleeplessness. The absence of localized mental health terminology, compounded by deep social stigma and fear of village gossip, often prevents individuals from seeking empathetic dialogue.",
-        "At the same time, rural communities possess rich customary support networks—trusted elders, tea stall camaraderie, kinship circles, and outdoor routines—that offer organic psychosocial comfort. This exploratory inquiry seeks to understand how mental wellbeing is perceived, articulated, and nurtured in village life without imposing alien clinical categories.",
+        "In villages, emotional distress is often carried quietly. It may show up as tiredness, headaches or poor sleep rather than being called stress. There are few local words for it, and people worry about stigma and gossip, so many never talk about it.",
+        "At the same time, villages have their own ways of helping: trusted elders, chats at the tea stall, family, and time spent outdoors. This survey asks how people understand and support wellbeing in their own words, without forcing clinical labels on them.",
       ],
       supportingImage: {
         src: "/images/health-conversation.jpg",
-        alt: "Two people sitting closely together along a quiet tree-canopied trail having an unhurried empathetic conversation",
-        caption: "A supportive, unhurried outdoor conversation along a quiet path, symbolizing safe spaces for dialogue and emotional renewal.",
+        alt: "Two people talking quietly on a shaded path",
+        caption: "Two people talking quietly on a shaded path.",
       },
     },
     audience: {
-      heading: "Who Should Participate?",
+      heading: "Who Can Take Part",
       description:
-        "Designed for community members, frontline health workers (ASHAs/ANMs), educators, and caregivers across rural districts.",
+        "For community members, frontline health workers (ASHAs and ANMs), teachers and carers in rural districts.",
       targetGroups: [
-        "Adult community members navigating family, agrarian, or economic stress",
-        "Frontline healthcare workers (ASHA, Anganwadi, and ANM workers)",
-        "Local school teachers and community youth leaders",
-        "Caregivers supporting elderly or chronically ill household members",
+        "Adults dealing with family, farming or money stress",
+        "Frontline health workers, including ASHA, Anganwadi and ANM workers",
+        "School teachers and local youth leaders",
+        "People caring for elderly or long-term ill family members",
       ],
     },
     exploration: {
-      heading: "What This Survey Explores",
+      heading: "What We're Asking About",
       intro:
-        "A sensitive, grounded exploration of community perceptions and informal care.",
+        "A careful look at how communities understand distress and support each other.",
       topics: [
         {
-          title: "Perceptions & Cultural Vocabulary of Distress",
+          title: "Words for Distress",
           description:
-            "Understanding the idioms, vernacular terms, and somatic expressions used to describe psychological strain and emotional fatigue.",
+            "The local words and physical complaints people use to describe emotional strain and exhaustion.",
         },
         {
-          title: "Social Stigma & Safe Confidential Spaces",
+          title: "Stigma and Privacy",
           description:
-            "Assessing fears of social ostracization, confidentiality concerns in tight-knit villages, and barriers to vulnerability.",
+            "Fear of being shunned, worries about privacy in close-knit villages, and what makes it hard to open up.",
         },
         {
-          title: "Frontline Healthcare Support Capacity",
+          title: "Health Worker Support",
           description:
-            "Evaluating the mental health counseling training, bandwidth, and referral resources available to rural ASHA workers.",
+            "What counselling training, time and referral options ASHA workers have.",
         },
         {
-          title: "Informal Healing & Peer Support Networks",
+          title: "Informal Support",
           description:
-            "Documenting the role of nature walks, religious gatherings, mutual labor sharing (paddi), and family listening.",
+            "How walks in nature, religious gatherings, shared work (paddi) and conversation with family help people.",
         },
       ],
     },
     significance: {
-      heading: "Why This Topic Matters",
+      heading: "Why It Matters",
       paragraphs: [
-        "Agrarian uncertainty, climate-induced crop failures, debt pressures, and isolation can place immense psychological strain on rural households. Yet formal mental healthcare infrastructure remains overwhelmingly concentrated in metropolitan tier-1 hospitals, leaving rural populations almost entirely unserved.",
-        "Fostering culturally respectful dialogue and documenting community-grounded coping systems is the crucial first step toward destigmatizing mental health and building compassionate community-first care models.",
+        "Farm uncertainty, crop failure, debt and isolation can take a heavy toll on rural families. Yet mental health services are mostly found in big-city hospitals, leaving village communities largely without them.",
+        "Talking respectfully, and recording how communities already cope, is a first step toward reducing stigma and building care that starts in the community.",
       ],
       wideImage: {
         src: "/images/health-village-vista.jpg",
-        alt: "A quiet rural hill community nestled among rolling valley slopes under soft daylight",
-        caption: "A quiet valley village in soft morning light, reflecting the human scale and community interconnectedness of rural life.",
+        alt: "A quiet hill village among rolling valley slopes in soft daylight",
+        caption: "A quiet valley village in the morning light.",
       },
     },
     closingStatement:
-      "Compassion begins with listening—creating safe, unhurried spaces where every individual can speak their truth without fear of judgment.",
+      "Care starts with listening: giving people a calm, unhurried space to speak without fear of judgement.",
     participation: {
       status: "unconfirmed",
       formUrl: null,
       estimatedMinutes: 8,
-      instructions: "Questionnaire access is currently pending protocol confirmation.",
+      instructions:
+        "This survey isn't open yet. We're waiting for the final protocol to be confirmed.",
       unavailableReason:
-        "Ethical protocols, informed consent procedures, and referral safeguards for this sensitive study are undergoing formal institutional review. The survey will launch once certified.",
+        "This is a sensitive topic, so the ethics review, consent process and referral support are still being checked. The survey will open once they are approved.",
       privacyNotice:
-        "All participation will be completely anonymous and confidential. No clinical records, names, or identifying data will ever be collected.",
+        "Participation will be anonymous and confidential. We will never collect clinical records, names or identifying details.",
     },
     relatedSurveySlugs: [
       "digital-access-rural-communities",
