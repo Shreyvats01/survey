@@ -23,7 +23,7 @@ export function SiteFooter() {
             >
               <BrandMark size="sm" className="text-plum" />
               <span className="text-sm font-semibold text-plum">
-                Shrey's Survey Archive
+                Survey Directory
               </span>
             </Link>
             <p className="max-w-xs text-sm leading-relaxed text-plum/50">
@@ -37,12 +37,12 @@ export function SiteFooter() {
             <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-plum/40">
               Navigation
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {footerLinks.map(({ to, label }) => (
                 <li key={to}>
                   <Link
                     to={to}
-                    className="text-sm text-plum/60 transition-colors duration-200 hover:text-plum"
+                    className="inline-block py-1.5 text-sm text-plum/60 transition-colors duration-200 hover:text-plum"
                   >
                     {label}
                   </Link>
@@ -76,7 +76,7 @@ export function SiteFooter() {
 
         {/* Bottom bar */}
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-plum/10 pt-6 text-xs text-plum/40 sm:flex-row">
-          <span>© {new Date().getFullYear()} Shrey's Survey Archive</span>
+          <span>© {new Date().getFullYear()} Survey Directory</span>
           <span>Built with care for communities everywhere.</span>
         </div>
       </Container>

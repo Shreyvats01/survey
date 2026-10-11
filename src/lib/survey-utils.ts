@@ -31,7 +31,7 @@ export function getSurveyBySlug(
   surveys: Survey[],
   slug: string
 ): Survey | undefined {
-  return surveys.find((s) => s.slug === slug);
+  return surveys.find((s) => s.slug === slug || s.aliases?.includes(slug));
 }
 
 export function getCategories(surveys: Survey[]): string[] {
@@ -44,6 +44,33 @@ export function getRelatedSurveys(
   current: Survey,
   limit = 3
 ): Survey[] {
+  if (current.relatedSurveySlugs && current.relatedSurveySlugs.length > 0) {
+    const explicitlyRelated: Survey[] = [];
+    for (const slug of current.relatedSurveySlugs) {
+      const match = surveys.find(
+        (s) => (s.slug === slug || s.aliases?.includes(slug)) && s.id !== current.id
+      );
+      if (match && !explicitlyRelated.some((r) => r.id === match.id)) {
+        explicitlyRelated.push(match);
+      }
+    }
+    if (explicitlyRelated.length >= limit) {
+      return explicitlyRelated.slice(0, limit);
+    }
+    const remainingLimit = limit - explicitlyRelated.length;
+    const fallbackMatches = surveys
+      .filter(
+        (s) =>
+          s.id !== current.id &&
+          !explicitlyRelated.some((r) => r.id === s.id) &&
+          (s.category === current.category ||
+            s.tags.some((t) => current.tags.includes(t)))
+      )
+      .slice(0, remainingLimit);
+
+    return [...explicitlyRelated, ...fallbackMatches];
+  }
+
   return surveys
     .filter(
       (s) =>

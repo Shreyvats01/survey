@@ -27,7 +27,7 @@ export function SurveySearch({
         placeholder="Search surveys..."
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded-full border border-plum/20 bg-cream/50 py-3 pl-11 pr-4 text-sm text-plum placeholder:text-plum/40 transition-colors duration-200 focus:border-plum/40 focus:outline-none focus:ring-2 focus:ring-plum/10"
+        className="w-full min-h-[44px] rounded-full border border-plum/20 bg-cream/50 py-3 pl-11 pr-4 text-sm text-plum placeholder:text-plum/40 transition-colors duration-200 focus:border-plum/40 focus:outline-none focus:ring-2 focus:ring-plum/10"
       />
     </div>
   );

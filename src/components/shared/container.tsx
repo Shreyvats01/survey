@@ -1,3 +1,4 @@
+import React from "react";
 import { cn } from "@/lib/utils";
 
 interface ContainerProps {
@@ -14,7 +15,7 @@ export function Container({
   return (
     <Component
       className={cn(
-        "mx-auto w-full max-w-[1200px] px-5 md:px-8 lg:px-12",
+        "mx-auto w-full max-w-[1376px] px-4 sm:px-8",
         className
       )}
     >

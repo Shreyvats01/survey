@@ -16,7 +16,7 @@ export function EditorialLink({
   external = false,
 }: EditorialLinkProps) {
   const classes = cn(
-    "group inline-flex items-center gap-3 rounded-full border border-plum/40 px-6 py-3 text-sm font-medium text-plum transition-colors duration-300 hover:border-plum hover:bg-plum hover:text-cream focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum",
+    "group inline-flex min-h-[44px] items-center justify-center gap-3 rounded-full border border-plum/40 px-6 py-3 text-sm font-medium text-plum transition-colors duration-300 hover:border-plum hover:bg-plum hover:text-cream focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-plum",
     className
   );
 

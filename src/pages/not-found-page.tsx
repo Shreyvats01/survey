@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router";
 import { motion } from "motion/react";
 import { ArrowLeft } from "lucide-react";
@@ -5,8 +6,12 @@ import { Container } from "@/components/shared/container";
 import { BrandMark } from "@/components/shared/brand-mark";
 
 export function NotFoundPage() {
+  useEffect(() => {
+    document.title = "Page Not Found — Survey Directory";
+  }, []);
+
   return (
-    <main className="relative z-10 flex flex-1 items-center justify-center">
+    <div className="relative z-10 flex flex-1 items-center justify-center">
       <Container className="py-20 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -36,6 +41,6 @@ export function NotFoundPage() {
           </div>
         </motion.div>
       </Container>
-    </main>
+    </div>
   );
 }

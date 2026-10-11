@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { motion } from "motion/react";
 import { Container } from "@/components/shared/container";
 
 export function MethodologyPage() {
+  useEffect(() => {
+    document.title = "Methodology — Survey Directory";
+  }, []);
+
   return (
-    <main className="relative z-10 flex-1">
+    <div className="relative z-10 flex-1">
       <Container className="py-8 md:py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -11,7 +16,7 @@ export function MethodologyPage() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="mx-auto max-w-2xl"
         >
-          <h1 className="font-serif text-4xl text-plum md:text-5xl">
+          <h1 className="font-serif text-3xl sm:text-4xl text-plum md:text-5xl break-words">
             Methodology
           </h1>
 
@@ -66,6 +71,6 @@ export function MethodologyPage() {
           </div>
         </motion.div>
       </Container>
-    </main>
+    </div>
   );
 }

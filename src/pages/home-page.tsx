@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { BackgroundGrid } from "@/components/home/background-grid";
 import { EditorialHero } from "@/components/home/editorial-hero";
 import { ResearchIntro } from "@/components/home/research-intro";
 import { FeaturedSurveys } from "@/components/home/featured-surveys";
@@ -6,11 +8,16 @@ import { Container } from "@/components/shared/container";
 import { motion } from "motion/react";
 
 export function HomePage() {
+  useEffect(() => {
+    document.title = "Survey Directory — A collection of questions about the world we share";
+  }, []);
+
   return (
-    <main className="relative z-10 flex-1">
+    <div className="relative z-10 flex-1">
+      <BackgroundGrid />
       <EditorialHero />
-      <ResearchIntro />
       <FeaturedSurveys />
+      <ResearchIntro />
       <SurveyCollection />
 
       {/* Participation statement */}
@@ -35,6 +42,6 @@ export function HomePage() {
           </motion.div>
         </Container>
       </section>
-    </main>
+    </div>
   );
 }

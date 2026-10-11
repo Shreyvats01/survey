@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { motion } from "motion/react";
 import { Container } from "@/components/shared/container";
 
 export function AboutPage() {
+  useEffect(() => {
+    document.title = "About — Survey Directory";
+  }, []);
+
   return (
-    <main className="relative z-10 flex-1">
+    <div className="relative z-10 flex-1">
       <Container className="py-8 md:py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -11,7 +16,7 @@ export function AboutPage() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="mx-auto max-w-2xl"
         >
-          <h1 className="font-serif text-4xl text-plum md:text-5xl">
+          <h1 className="font-serif text-3xl sm:text-4xl text-plum md:text-5xl break-words">
             About this archive
           </h1>
 
@@ -46,13 +51,23 @@ export function AboutPage() {
               </p>
             </section>
 
-            <section>
-              <h2 className="mb-3 font-serif text-2xl text-plum">Privacy</h2>
+            <section id="privacy" className="scroll-mt-8">
+              <h2 className="mb-3 font-serif text-2xl text-plum">Privacy Policy</h2>
               <p>
                 All survey responses are anonymous unless explicitly stated
                 otherwise in the individual survey. No cookies, analytics trackers,
                 or third-party scripts are used on this website beyond what is
                 necessary for its operation.
+              </p>
+            </section>
+
+            <section id="accessibility" className="scroll-mt-8">
+              <h2 className="mb-3 font-serif text-2xl text-plum">Accessibility Statement</h2>
+              <p>
+                We are committed to making this survey directory accessible to everyone.
+                The interface follows WCAG 2.1 AA standards, featuring full keyboard
+                navigation, focus management, minimum 44x44px touch targets on mobile
+                devices, and support for prefers-reduced-motion settings.
               </p>
             </section>
 
@@ -73,6 +88,6 @@ export function AboutPage() {
           </div>
         </motion.div>
       </Container>
-    </main>
+    </div>
   );
 }
